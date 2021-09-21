@@ -17,9 +17,10 @@ const Table = () => {
     }
 
     const handleRowClick = (ID) => {
+        localStorage.setItem("ID", ID)
         router.push({
             pathname: '/twoCards',
-            query: { id: ID }
+            // query: { id: ID }
         })
     }
 

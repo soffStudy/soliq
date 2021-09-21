@@ -15,7 +15,7 @@ const Dashboard = () => {
     }
     return (
         <Components>
-            <div className="container">
+            <div className="container locked">
                 <div className='dashboard'>
                     <div className='d-flex justify-content-center'>
                         <img src="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" className={`${tugma ? "gerb" : "gerb2"}`} alt="" />

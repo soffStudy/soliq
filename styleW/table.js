@@ -4,6 +4,7 @@ const Tables = styled.div`
     table{
         padding: 10px;
         border: 1px solid black;
+        width: 100%;
         tr{
             .thColspan{
                 width: 100%;
@@ -41,7 +42,7 @@ const Tables = styled.div`
             background-image: url("https://www.wow1day.com/sites/default/files/national-blog/W1D_Office_6.png");
         }
         .rasmlar2{
-            background-image: url("http://tuitkf.uz/images/news/f4bcffa2b8.jpg"); 
+            background-image: url("https://media.istockphoto.com/photos/sharing-ideas-and-information-picture-id1074286338?k=20&m=1074286338&s=612x612&w=0&h=L5luOMQBohT4GZS1sPfJ8mamNbbynQjCXTggXMKr3lQ="); 
         }
         .twleft{
             transition: 0.3s;
@@ -61,8 +62,8 @@ const Tables = styled.div`
                }
                .tugmaB{
                    display: flex;
-                   justify-content: center;
-                   align-items: center;
+                   justify-content: end;
+                   align-items: end;
                    height: 100%;
                }
            }
@@ -71,7 +72,58 @@ const Tables = styled.div`
                }
         }
     }
-
+    .documentwords{
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+    .btnKirish{
+        border: 2px solid white;
+        border-radius: 15px;
+        color: white;
+        font-weight: bold;
+    }
+   .soliqLogo{
+       display: flex;
+       justify-content: center;
+       img{
+           width: 170px;
+           height: 170px;
+           object-fit: cover;
+       }
+   }
+   .Inform{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px;
+       margin-bottom: 10px;
+       border-radius: 10px;
+       background-image: linear-gradient(to right top, #70a2ed, #61bbf7, #67d2f9, #82e6f7, #a7f9f6);
+       .rasmShaxs{
+           width: 70px;
+           height: 70px;
+           object-fit: cover;
+           margin: 5px;
+           border-radius: 50%;
+       
+       }
+       .personInf{
+           color: black;
+           a{
+               color: black;
+               text-decoration: none;
+               display: block;
+           }
+       }
+   }
+   .menuRightc{
+       .dfg{
+           width: 50px;
+           height: 50px;
+           object-fit: cover;
+       }
+   }
 `;
 
 export default Tables;

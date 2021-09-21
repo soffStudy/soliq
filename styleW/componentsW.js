@@ -8,6 +8,7 @@ const Components = styled.div`
     transition: 0.3s;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 10px;
     max-width: 100%;
     ul{
     list-style-type: none;
@@ -43,6 +44,12 @@ const Components = styled.div`
 
     }
 }
+
+.locked{
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
 .menuWord{
     display: none;
     transition: 0.3s;
@@ -61,6 +68,19 @@ const Components = styled.div`
 .dashbordChildren{
     min-height: 90vh;
 }
+.ikonkalar{
+    transition: 0.3s;
+        font-size: 25px;
+        display: inline-block;
+        margin-right: 10px;
+        &:hover{
+            transform: translateY(-8px);
+        }
+        a{
+            color: white;
+        }
+    }
+
 
 `;
 
