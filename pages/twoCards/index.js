@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Tables from '../styleW/table'
+import Tables from '../../styleW/table'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import AOS from 'aos'
@@ -13,21 +13,6 @@ const TwoCards = () => {
     const router = useRouter();
     const ID = localStorage.getItem("ID");
     console.log(ID);
-
-    // const Bayonnoma = (ID) => {
-    //     console.log("bayonnomaL: ", ID)
-    //     router.push({
-    //         pathname: "/bayonnoma",
-    //         query: { id: ID }
-    //     })
-    // }
-
-    // const Haror = (ID) => {
-    //     router.push({
-    //         pathname: "/qaror",
-    //         query: { id: ID }
-    //     })
-    // }
 
     useEffect(() => {
         AOS.init();

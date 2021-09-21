@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import Tables from '../../styleW/table'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const Table = () => {
@@ -20,7 +19,6 @@ const Table = () => {
         localStorage.setItem("ID", ID)
         router.push({
             pathname: '/twoCards',
-            // query: { id: ID }
         })
     }
 
