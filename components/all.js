@@ -10,7 +10,7 @@ const All = ({ children }) => {
 
                 <Dashboard />
 
-                <div>
+                <div className='w-100'>
                     {children}
                 </div>
             </div>

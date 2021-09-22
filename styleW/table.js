@@ -99,7 +99,13 @@ const Tables = styled.div`
        padding: 10px;
        margin-bottom: 10px;
        border-radius: 10px;
-       background-image: linear-gradient(to right top, #70a2ed, #61bbf7, #67d2f9, #82e6f7, #a7f9f6);
+       box-shadow: 4px 5px 5px #575757;
+       &:hover{
+           transition: 0.3s;
+        box-shadow: 7px 8px 4px #575757;
+
+       }
+       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
        .rasmShaxs{
            width: 70px;
            height: 70px;

@@ -18,11 +18,11 @@ const Dashboard = () => {
             <div className="container locked">
                 <div className='dashboard'>
                     <div className='d-flex justify-content-center'>
-                        <img src="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" className={`${tugma ? "gerb" : "gerb2"}`} alt="" />
+                        <img src="https://play-lh.googleusercontent.com/WsnTVMB-ichRSKymTZ13f8M_Q_4XlfgofdYk3V4JsFe7J4nxYZ8J_YUZQxmWjs4zsYIf=s1200" className={`${tugma ? "gerb" : "gerb2"}`} alt="" />
 
                     </div>
                     <div className='d-flex justify-content-center mt-2 mb-2'>
-                        <button className='btn btn-primary fw-bold' onClick={() => fd()}>
+                        <button className='btn btnDashboard fw-bold' onClick={() => fd()}>
                             <AiOutlineUnorderedList /></button>
                     </div>
                     <ul>

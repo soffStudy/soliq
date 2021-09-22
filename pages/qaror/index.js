@@ -25,7 +25,15 @@ const Qaror = () => {
     return (
         <div>
             <h1>Qaror</h1>
-            <h2><span className='text-danger'>{fullData.companyName}</span> ipsum dolor sit amet consectetur adipisicing elit. Ex quas soluta, tempore id deleniti ipsum, eligendi possimus blanditiis quis officiis ad unde non ipsa architecto beatae, alias aspernatur accusamus officia.</h2>
+            <p>Soliq turi: {fullData.companyName}</p>
+            <p>Soliq turi: {fullData.soliqTuri}</p>
+            <p>Kredit olingan sana: {fullData.davri}</p>
+            <p>To'lash kerak bo'lgan  sana: {fullData.muddat}</p>
+            <p>To'lov qiymati: {fullData.sum}</p>
+            <p> Viloyat kodi: {fullData.viloyatKodi}</p>
+            <p> Tuman kodi:{fullData.tumanKodi}</p>
+            <p>Kechikkan kun: {fullData.kechuikkanKun}</p>
+            <p>Jarima Summasi: {fullData.jarimaSumma}</p>
 
         </div>
     )

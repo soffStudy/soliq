@@ -12,10 +12,12 @@ const Components = styled.div`
     max-width: 100%;
     ul{
     list-style-type: none;
-    margin: 0 !important;
+    margin: 0;
     padding: 0 !important;
+    margin-top: 30px;
     li{
         padding: 5px;
+        margin-bottom: 10px;
         a{
             color: white;
             text-decoration: none;
@@ -28,8 +30,8 @@ const Components = styled.div`
     }
     }
     .gerb{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         display: block;
         transition: 0.3s;
@@ -79,6 +81,13 @@ const Components = styled.div`
         a{
             color: white;
         }
+    }
+    .btnDashboard{
+        background-color: #003978;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
 
