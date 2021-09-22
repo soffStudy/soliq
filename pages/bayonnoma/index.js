@@ -66,7 +66,7 @@ const Bayonnoma = () => {
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.kechuikkanKun}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.jarimaSumma}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.kechuikkanKun}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
 
 
 

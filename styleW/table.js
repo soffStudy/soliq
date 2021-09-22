@@ -115,9 +115,9 @@ const Tables = styled.div`
        
        }
        .personInf{
-           color: black;
+           color: white;
            a{
-               color: black;
+               color: white;
                text-decoration: none;
                display: block;
            }

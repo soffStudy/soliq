@@ -1,7 +1,12 @@
 import React from 'react'
 import Tables from '../../styleW/table'
+import { CgPlayListCheck } from "react-icons/cg";
+import { AiOutlineCalendar, AiOutlineInfoCircle } from "react-icons/ai";
+
+
 
 const Menu = () => {
+
     return (
         <Tables>
             <div className='container menu'>
@@ -22,9 +27,9 @@ const Menu = () => {
                                 </div>
                                 <div className='personInf'>
                                     <p className='fs-5 fw-bold'>Yuridik shaxslar uchun</p>
-                                    <a href="">Kreditlar ro'yhati</a>
-                                    <a href="">To'lash vaqtlari</a>
-                                    <a href="">Mijoz ma'lumotlari</a>
+                                    <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
+                                    <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
+                                    <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>
                                 </div>
                             </div>
 
@@ -39,9 +44,9 @@ const Menu = () => {
                                 </div>
                                 <div className='personInf'>
                                     <p className='fs-5 fw-bold'>Jismoniy shaxslar uchun</p>
-                                    <a href="">Kreditlar ro'yhati</a>
-                                    <a href="">To'lash vaqtlari</a>
-                                    <a href="">Mijoz ma'lumotlari</a>
+                                    <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
+                                    <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
+                                    <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>
                                 </div>
                             </div>
                         </div>
@@ -54,10 +59,10 @@ const Menu = () => {
                                     <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="rasm" className='rasmShaxs' />
                                 </div>
                                 <div className='personInf'>
-                                    <p>Jismoniy shaxslar uchun</p>
-                                    <a href="">Ma'lumot</a>
-                                    <a href="">Ma'lumot</a>
-                                    <a href="">Ma'lumot</a>
+                                    <p className='fs-5 fw-bold'>Boshqa soha uchun</p>
+                                    <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
+                                    <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
+                                    <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>
                                 </div>
                             </div>
                         </div>

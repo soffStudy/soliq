@@ -11,6 +11,7 @@ const TwoCards = () => {
 
     // Bu yerda jadvaldan id olib kelib bayonnoma yoki qaror page ga yuborish kerak
     const router = useRouter();
+
     const ID = localStorage.getItem("ID");
     console.log(ID);
 
