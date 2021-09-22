@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 
-owners: [
+const owners = [
     { id: '1', owner: false, companyName: "MALIBU GARDEN MCHJ", soliqTuri: "QQS", davri: "Yanvar", muddat: "20.02.2021", sana: "25.02.2021", sum: 500, viloyatKodi: '50', tumanKodi: "1", kechuikkanKun: "5", jarimaSumma: "25.0" },
 
     { id: '2', owner: true, companyName: "COBALT GARDEN MCHJ", soliqTuri: "QQS", davri: "Mart", muddat: "20.02.2021", sana: "25.02.2021", sum: 700, viloyatKodi: '50', tumanKodi: "1", kechuikkanKun: "5", jarimaSumma: "25.0" },
@@ -17,6 +17,7 @@ owners: [
 const Bayonnoma = () => {
     const router = useRouter()
     let fullData = [];
+
     const ID = localStorage.getItem("ID");
     console.log(ID);
 
