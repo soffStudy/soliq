@@ -16,25 +16,26 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-4 col-sm-12">
                             <div className='m-1'>
-                                <p>About</p>
-                                <p>Number</p>
-                                <p>Documents</p>
-                                <p>Companies</p>
+                                <p>Sayt haqida</p>
+                                <p>Tel.</p>
+                                <p>Hujjatlar</p>
+                                <p>Jismoniy shaxslar</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-12">
                             <div className='m-1'>
-                                <p>task 1</p>
-                                <p>task 1</p>
-                                <p>task 1</p>
-                                <p>task 1</p>
+                                <p>Yuridik shaxslar</p>
+                                <p>+99877-985-95-95</p>
+                                <p>+99877-985-95-95</p>
+                                <p>Manzil</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-12">
                             <div className='m-1'>
-                                <p>task 1</p>
-                                <p>task 1</p>
-                                <p>task 1</p>
+                                <p>Bo'limlar</p>
+                                <p>Email</p>
+                                <input type="email" className='form-control' placeholder="@gmail.com" />
+
                                 <div className='ikonkalar'>
                                     <Link href=''>
                                         <a ><AiOutlineInstagram /></a>

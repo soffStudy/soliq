@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Documents from '../../styleW/documents';
 
 
@@ -17,69 +17,74 @@ const owners = [
 const Qaror = () => {
     let fullData = [];
 
-    const ID = localStorage.getItem("ID");
-    console.log(ID);
+    const [state, setstate] = useState(1);
+
+    useEffect(() => {
+        setstate(localStorage && localStorage.getItem("ID"));
+
+    }, []);
+
 
     owners.map(value => {
-        if (value.id == ID) fullData = value;
-    })
+        if (value.id == state) fullData = value;
+    });
+
 
     return (
         <Documents>
             <div className="container">
-                <h1 className='text-center mb-2 mt-3'>Qaror</h1>
-                <div className='bayonnoma'>
+                <div className='bayonnoma mt-5'>
                     <div className='d-flex justify-content-center'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" alt="Rasm" width="100" height='100' />
                     </div>
 
-                    <div className='d-flex justify-content-between m-3'>
-                        <div className='w-50'>
+                    <div className='d-flex justify-content-between m-3 qaror'>
+                        <div className='qaror2'>
                             <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ
                                 ФАРМОНИ</p>
                             <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ АЙРИМ ҲУЖЖАТЛАРИГА ЎЗГАРТИШЛАР КИРИТИШ ТЎҒРИСИДА</p>
                         </div>
 
-                        <div className='w-50'>
+                        <div className='qaror2'>
                             <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ
                                 ФАРМОНИ</p>
                             <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ АЙРИМ ҲУЖЖАТЛАРИГА ЎЗГАРТИШЛАР КИРИТИШ ТЎҒРИСИДА</p>
                         </div>
                     </div>
 
-                    <h5 className='text-center'>Qaror</h5>
+                    <h3 className='text-center'>Qaror</h3>
 
-                    <p> <span className={fullData.owner ? "green" : "red"}>{fullData.companyName}</span> ipsum dolor sit amet consectetur, adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, <span className={fullData.owner ? "green" : "red"}>{fullData.soliqTuri}</span> . Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio <span className={fullData.owner ? "green" : "red"}>{fullData.davri}</span>  a velit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laborum alias consequuntur, amet cupiditate soluta natus quia laudantium libero quidem saepe assumenda dolore nam repellendus porro tempora voluptas consequatur reiciendis!</p>
-                    <p>Lorem ipsum dolor sit amet <span className={fullData.owner ? "green" : "red"}>{fullData.sana}</span> , adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
-                    <p>КИРИТИШ ТЎҒРИСИДА
-                        Ўзбекистон Республикаси Президентининг «Ўзбекистон Республикасининг Интеллектуал мулк агентлигини ташкил этиш тўғрисида» 2011 йил 24 майдаги ПҚ-1536-сонли қарорига мувофиқ:</p>
-                    <p>1. Korxona nomi:  айрим ҳужжатларига иловага мувофиқ ўзгартишлар киритилсин.</p>
-                    <p>2. Мазкур Фармоннинг ижросини назорат қилиш Ўзбекистон Республикаси Бош вазирининг ўринбосари А.Н. Арипов зиммасига юклансин.</p>
+                    <div className='iform'>
+                        <p> <span className={fullData.owner ? "green" : "red"}>{fullData.companyName}</span> ipsum dolor sit amet consectetur, adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, <span className={fullData.owner ? "green" : "red"}>{fullData.soliqTuri}</span> . Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio <span className={fullData.owner ? "green" : "red"}>{fullData.davri}</span>  a velit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laborum alias consequuntur, amet cupiditate soluta natus quia laudantium libero quidem saepe assumenda dolore nam repellendus porro tempora voluptas consequatur reiciendis!</p>
+                        <p>Lorem ipsum dolor sit amet <span className={fullData.owner ? "green" : "red"}>{fullData.sana}</span> , adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
+                        <p>КИРИТИШ ТЎҒРИСИДА
+                            Ўзбекистон Республикаси Президентининг «Ўзбекистон Республикасининг Интеллектуал мулк агентлигини ташкил этиш тўғрисида» 2011 йил 24 майдаги ПҚ-1536-сонли қарорига мувофиқ:</p>
+                        <p>1. Korxona nomi:  айрим ҳужжатларига иловага мувофиқ ўзгартишлар киритилсин.</p>
+                        <p>2. Мазкур Фармоннинг ижросини назорат қилиш Ўзбекистон Республикаси Бош вазирининг ўринбосари А.Н. Арипов зиммасига юклансин.</p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.muddat}</span>aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.muddat}</span>aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.sum}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias em, ipsum dolor sit amet consectetur adipisici sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.viloyatKodi}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.tumanKodi}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.sum}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.kechuikkanKun}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias em, ipsum dolor sit amet consectetur adipisici sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.viloyatKodi}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
-
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.tumanKodi}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.kechuikkanKun}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.kechuikkanKun}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.jarimaSumma}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
 
 
 
-                    <p>Soliq turi: {fullData.soliqTuri}</p>
-                    <p>Kredit olingan sana: {fullData.davri}</p>
-                    <p>To'lash kerak bo'lgan  sana: {fullData.muddat}</p>
-                    <p>To'lov qiymati: {fullData.sum}</p>
-                    <p> Viloyat kodi: {fullData.viloyatKodi}</p>
-                    <p> Tuman kodi:{fullData.tumanKodi}</p>
-                    <p>Kechikkan kun: {fullData.kechuikkanKun}</p>
-                    <p>Jarima Summasi: {fullData.jarimaSumma}</p>
+                        {/* <p>Soliq turi: {fullData.soliqTuri}</p>
+                        <p>Kredit olingan sana: {fullData.davri}</p>
+                        <p>To'lash kerak bo'lgan  sana: {fullData.muddat}</p>
+                        <p>To'lov qiymati: {fullData.sum}</p>
+                        <p> Viloyat kodi: {fullData.viloyatKodi}</p>
+                        <p> Tuman kodi:{fullData.tumanKodi}</p>
+                        <p>Kechikkan kun: {fullData.kechuikkanKun}</p>
+                        <p>Jarima Summasi: {fullData.jarimaSumma}</p> */}
+
+                    </div>
                 </div>
             </div>
 

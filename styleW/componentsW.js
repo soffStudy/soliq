@@ -4,11 +4,12 @@ const Components = styled.div`
 
 .dashboard{
     background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
-    min-height: 100vh;
+    min-height: 95vh;
     transition: 0.3s;
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
+    margin-bottom:10px;
     max-width: 100%;
     ul{
     list-style-type: none;
@@ -63,6 +64,8 @@ const Components = styled.div`
 
 .footer{
     background-color: #002A69;
+    padding: 15px 0;
+    margin-top: 10px;
 }
 .children{
     max-width: 800px !important;

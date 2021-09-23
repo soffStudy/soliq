@@ -7,7 +7,9 @@ const Table = () => {
 
     const owners = useSelector(state => state.owners);
     const sum = useSelector(state => state.sum);
-    const router = useRouter()
+    const router = useRouter();
+
+  
 
     let umumiySumm = 0;
 
@@ -25,7 +27,8 @@ const Table = () => {
 
     return (
         <Tables>
-            <h1 className='text-center m-3'>Table</h1>
+            <h3 className='text-center m-3 mb-5'>Mijozlar haqidagi to'liq ma'lumot</h3>
+            <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
