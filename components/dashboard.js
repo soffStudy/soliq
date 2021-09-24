@@ -27,7 +27,7 @@ const Dashboard = () => {
                     </div>
                     <ul>
                         <li>
-                            <Link href="/">
+                            <Link href="/menu">
                                 <a className='d-flex'>
                                     <span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><AiOutlineHome />
                                     </span>

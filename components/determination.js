@@ -10,7 +10,7 @@ const Determination = () => {
     return (
         <div>
             <All>
-                {menu === '' && <Menu /> || ""}
+                {menu === 'menu' && <Menu /> || ""}
                 {menu === 'table' && <Table /> || ""}
             </All>
 
