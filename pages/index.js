@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Menu from './menu/menu'
+// import Menu from './menu/menu'
+import Glogin from './login/Glogin'
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <Menu />
+        <Glogin />
+        {/* <Menu /> */}
 
       </main>
 
