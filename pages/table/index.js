@@ -4,6 +4,7 @@ import Tables from '../../styleW/table'
 import { useRouter } from 'next/router'
 import { BiDownload } from "react-icons/bi"
 import { CSVLink, CSVDownload } from 'react-csv'
+import All from '../../components/all'
 
 
 const Table = () => {
@@ -30,6 +31,7 @@ const Table = () => {
 
 
     return (
+        <All>
         <Tables>
             <div className='p-4'>
                 <h3 className='text-center m-3 mb-5'>Mijozlar haqidagi to'liq ma'lumot</h3>
@@ -98,6 +100,7 @@ const Table = () => {
                 </div>
             </div>
         </Tables>
+        </All>
     )
 }
 
