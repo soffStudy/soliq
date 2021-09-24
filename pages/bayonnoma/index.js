@@ -31,6 +31,8 @@ const Bayonnoma = () => {
         if (value.id == state) fullData = value;
     })
 
+
+
     return (
         <Documents>
             <div className="container">

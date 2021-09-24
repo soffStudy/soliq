@@ -24,6 +24,10 @@ const Qaror = () => {
 
     }, []);
 
+    let today = new Date();
+    let time = today.getHours() + ":" + today.getMinutes();
+    console.log(time);
+
 
     owners.map(value => {
         if (value.id == state) fullData = value;
@@ -73,16 +77,7 @@ const Qaror = () => {
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.jarimaSumma}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
 
-
-
-                        {/* <p>Soliq turi: {fullData.soliqTuri}</p>
-                        <p>Kredit olingan sana: {fullData.davri}</p>
-                        <p>To'lash kerak bo'lgan  sana: {fullData.muddat}</p>
-                        <p>To'lov qiymati: {fullData.sum}</p>
-                        <p> Viloyat kodi: {fullData.viloyatKodi}</p>
-                        <p> Tuman kodi:{fullData.tumanKodi}</p>
-                        <p>Kechikkan kun: {fullData.kechuikkanKun}</p>
-                        <p>Jarima Summasi: {fullData.jarimaSumma}</p> */}
+                        <p className='text-end'>{time}</p>
 
                     </div>
                 </div>

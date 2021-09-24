@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import Tables from '../../styleW/table'
 import { useRouter } from 'next/router'
+import { BiDownload } from "react-icons/bi"
+import { CSVLink, CSVDownload } from 'react-csv'
+
 
 const Table = () => {
 
@@ -9,7 +12,7 @@ const Table = () => {
     const sum = useSelector(state => state.sum);
     const router = useRouter();
 
-  
+
 
     let umumiySumm = 0;
 
@@ -24,16 +27,20 @@ const Table = () => {
         })
     }
 
-
     return (
         <Tables>
-            <h3 className='text-center m-3 mb-5'>Mijozlar haqidagi to'liq ma'lumot</h3>
-            <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
+            <div className='p-4'>
+                <h3 className='text-center m-3 mb-5'>Mijozlar haqidagi to'liq ma'lumot</h3>
+                <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
+                <div className='d-flex justify-content-end'>
+                    <CSVLink className='btn btn-primary fs-4' data={owners}><BiDownload /></CSVLink>
+                </div>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div>
-                            <table className='table table-hover'>
+                            <table className='table table-hover' id="tableEx">
                                 <thead>
                                     <tr>
                                         <th rowSpan="2"><div className='thColspan'>Korxona nomi</div></th>
@@ -56,7 +63,7 @@ const Table = () => {
 
                                     {owners.map((v, i) => {
                                         return (
-                                            <tr key={i} className={v.owner ? "table-success" : "table-danger"} onClick={() => handleRowClick(v.id)}>
+                                            <tr key={i} className={v.owner ? "yashil" : "qizil"} onClick={() => handleRowClick(v.id)}>
                                                 <td>{v.companyName}</td>
                                                 <td>{v.soliqTuri}</td>
                                                 <td>{v.davri}</td>

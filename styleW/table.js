@@ -130,6 +130,13 @@ const Tables = styled.div`
            object-fit: cover;
        }
    }
+   .yashil{
+    background-color: #8FFFA2;
+   }
+
+   .qizil{
+    background-color: #FF8F8F;
+   }
 `;
 
 export default Tables;

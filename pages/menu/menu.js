@@ -6,7 +6,7 @@ import { AiOutlineCalendar, AiOutlineInfoCircle } from "react-icons/ai";
 
 
 const Menu = () => {
-   
+
 
 
     return (
@@ -25,7 +25,7 @@ const Menu = () => {
 
                             <div className='Inform'>
                                 <div>
-                                    <img src="https://rusnetwork.net/build/images/no-photo.jpg" alt="rasm" className='rasmShaxs' />
+                                    <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" alt="rasm" className='rasmShaxs' />
                                 </div>
                                 <div className='personInf'>
                                     <p className='fs-5 fw-bold'>Yuridik shaxslar uchun</p>
@@ -58,7 +58,7 @@ const Menu = () => {
                         <div className='m-1'>
                             <div className='Inform'>
                                 <div>
-                                    <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="rasm" className='rasmShaxs' />
+                                    <img src="https://www.pngitem.com/pimgs/m/78-786420_icono-usuario-joven-transparent-user-png-png-download.png" alt="rasm" className='rasmShaxs' />
                                 </div>
                                 <div className='personInf'>
                                     <p className='fs-5 fw-bold'>Boshqa soha uchun</p>
