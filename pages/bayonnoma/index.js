@@ -35,19 +35,34 @@ const Bayonnoma = () => {
 
     const pdfg = () => {
         let doc = new jsPDF("p", "pt", "a4");
-        doc.save("Soliq.pdf");
+        // doc.text("Hello world!", 10, <10);
+        // doc.save("Soliq.pdf");
 
+        var elem = document.getElementById("#print");
+        var res = doc.autoTableHtmlToJson(elem);
+        doc.autoTable(res.columns, res.data);
+        doc.save("table.pdf");
+
+    }
+
+    const printPageFun = (divName) => {
+        var printContents = document.getElementById(divName).innerHTML
+        var originalContents = document.body.innerHTML
+        document.body.innerHTML = printContents
+        window.print()
+        document.body.innerHTML = originalContents
     }
 
 
     return (
         <Documents>
-            <div className="container" id='print'>
+            <div className="container">
                 <div className='d-flex justify-content-end mt-2'>
                     <button className='btn btn-primary' onClick={() => pdfg()}>Download</button>
+                    <button className='btn btn-primary' onClick={() => printPageFun('print')}>print Page</button>
 
                 </div>
-                <div className='bayonnoma mt-5'>
+                <div className='bayonnoma mt-5' id='print'>
                     <div className='d-flex justify-content-center'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" alt="Rasm" width="100" height='100' />
                     </div>

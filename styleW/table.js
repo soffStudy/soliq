@@ -56,20 +56,8 @@ const Tables = styled.div`
             object-fit: cover;
            &:hover{
                box-shadow: 3px 4px 10px #858585;
-               .sozlarB{
-                   display: none;
-                   transition: 0.3s;
-               }
-               .tugmaB{
-                   display: flex;
-                   justify-content: end;
-                   align-items: end;
-                   height: 100%;
-               }
            }
-           .tugmaB{
-                   display: none;
-               }
+         
         }
     }
     .documentwords{
