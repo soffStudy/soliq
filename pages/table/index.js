@@ -27,6 +27,8 @@ const Table = () => {
         })
     }
 
+
+
     return (
         <Tables>
             <div className='p-4'>
@@ -45,7 +47,7 @@ const Table = () => {
                                     <tr>
                                         <th rowSpan="2"><div className='thColspan'>Korxona nomi</div></th>
                                         <th rowSpan="2"><div className='thColspan'>Soliq turi</div></th>
-                                        <th colSpan='2'>Hisobot topshirish</th>
+                                        <th colSpan='2'>Hisobot topshirish </th>
                                         <th colSpan='4'>Kechiktirib taqdim etilgan xisobot turi</th>
                                         <th rowSpan='2'><div className='thColspan'>Kechikkan kuni </div></th>
                                         <th rowSpan='2'><div className='thColspan'>Jarima summasi</div></th>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Documents from '../../styleW/documents'
+import jsPDF from 'jspdf'
 
 
 const owners = [
@@ -27,15 +28,25 @@ const Bayonnoma = () => {
     }, []);
 
 
+
     owners.map(value => {
         if (value.id == state) fullData = value;
     })
 
+    const pdfg = () => {
+        let doc = new jsPDF("p", "pt", "a4");
+        doc.save("Soliq.pdf");
+
+    }
 
 
     return (
         <Documents>
-            <div className="container">
+            <div className="container" id='print'>
+                <div className='d-flex justify-content-end mt-2'>
+                    <button className='btn btn-primary' onClick={() => pdfg()}>Download</button>
+
+                </div>
                 <div className='bayonnoma mt-5'>
                     <div className='d-flex justify-content-center'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" alt="Rasm" width="100" height='100' />
