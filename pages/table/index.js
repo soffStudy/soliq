@@ -39,6 +39,7 @@ const Table = () => {
                 <div className='d-flex justify-content-end'>
                     <CSVLink className='btn btn-primary fs-4' data={owners}><BiDownload /></CSVLink>
                 </div>
+
             </div>
             <div className="container">
                 <div className="row">

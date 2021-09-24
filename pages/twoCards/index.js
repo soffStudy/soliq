@@ -40,9 +40,7 @@ const TwoCards = () => {
                             </div>
                             <Link href="bayonnoma">
                                 <a>
-                                    <div className='tugmaB'>
-                                        <button className='btn btnKirish'>Go to</button>
-                                    </div>
+                                    <button className='btn btnKirish'>Go to</button>
                                 </a>
                             </Link>
                         </div>
@@ -56,9 +54,7 @@ const TwoCards = () => {
                             </div>
                             <Link href="qaror">
                                 <a>
-                                    <div className='tugmaB'>
-                                        <button className='btn btnKirish'>Go to</button>
-                                    </div>
+                                    <button className='btn btnKirish'>Go to</button>
                                 </a>
                             </Link>
                         </div>
