@@ -17,8 +17,8 @@ const Form = ({ Login, error }) => {
         <FormWrapper>
             <form onSubmit={submitHandler}>
                 <div className="form-inner">
+                    <img src="https://play-lh.googleusercontent.com/WsnTVMB-ichRSKymTZ13f8M_Q_4XlfgofdYk3V4JsFe7J4nxYZ8J_YUZQxmWjs4zsYIf=s1200" alt="" className='rasm' />
                     <div className="nature">
-                        <Image src={Logo} className="nature_img" />
                     </div>
                     <div className="login_otish">
                         <h2>Ro'yhatdan o'tish</h2>

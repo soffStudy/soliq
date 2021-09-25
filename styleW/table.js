@@ -32,18 +32,26 @@ const Tables = styled.div`
         width: 100% !important;
     }
     .twCards{
-        min-height:70vh;
         width: 100% !important;
+        background-image: url("https://pix10.agoda.net/geo/city/14617/1_14617_02.jpg?s=1920x822");
+        background-repeat: no-repeat;
+        background-position: right, bottom;
+        background-size: cover;
+        min-height:100vh !important;
+        border-radius: 5px;
+        margin-top: 0;
+        padding-top: 0;
         a{
             text-decoration: none;
             color: black;
         }
-        .rasmlar1{
+        /* .rasmlar1{
             background-image: url("https://www.wow1day.com/sites/default/files/national-blog/W1D_Office_6.png");
         }
         .rasmlar2{
+            background-color: green;
             background-image: url("https://media.istockphoto.com/photos/sharing-ideas-and-information-picture-id1074286338?k=20&m=1074286338&s=612x612&w=0&h=L5luOMQBohT4GZS1sPfJ8mamNbbynQjCXTggXMKr3lQ="); 
-        }
+        } */
         .twleft{
             transition: 0.3s;
             padding: 20px;
@@ -54,9 +62,11 @@ const Tables = styled.div`
             width: 300px;
             height:200px;
             object-fit: cover;
-           &:hover{
-               box-shadow: 3px 4px 10px #858585;
-           }
+            box-shadow: 3px 4px 10px black;
+
+           /* &:hover{
+               box-shadow: 3px 4px 10px black;
+           } */
          
         }
     }
