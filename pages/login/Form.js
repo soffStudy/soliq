@@ -9,10 +9,9 @@ const Form = ({Login, error}) => {
     const[details, setDetails] = useState({name: "", email: "", password: "", role: "" });
 
     const submitHandler = e => {
-        
         e.preventDefault();
-
-        Login(details)
+        Login(details);
+        // console.log(e.target.value) + 'salom';
     }
     return (
         <FormWrapper>
@@ -26,7 +25,7 @@ const Form = ({Login, error}) => {
                     </div>
                     <div className="radio_button">
                         <input type="radio" value="user" name="radio" onChange={(e) => setDetails({admin: e.target.value})}/>
-                        <label>User</label>
+                        <label>Users</label>
                         <input type="radio" value="admin" name="radio" onChange={(e) => setDetails({admin: e.target.value})}/>
                         <label>Admin</label>
                     </div>
