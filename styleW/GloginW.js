@@ -5,7 +5,7 @@ export const GloginW = styled.div`
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 1100px;
+    width: 100%;
     }
 
 /* .welcome {
