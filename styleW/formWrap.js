@@ -138,5 +138,10 @@ export const FormWrapper = styled.div`
     .radio_button>label {
         margin-right: 10px;
     }
+    .rasm{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
    
 `;
