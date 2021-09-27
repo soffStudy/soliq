@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router';
 import Image from 'next/image'
 import { FormWrapper } from './../../styleW/formWrap';
-import Logo from './logo1331.png'
+import Logo from './soliq.jpg'
 
 const Form = ({ Login, error }) => {
     const router = useRouter()

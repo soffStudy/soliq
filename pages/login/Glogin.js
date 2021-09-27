@@ -10,7 +10,7 @@ function Glogin() {
   const router = useRouter()
 
   const adminUser = {
-    email: "kkromovibrohim7@gmail.com",
+    email: "akromovibrohim7@gmail.com",
     password: "asdf"
   }
 
