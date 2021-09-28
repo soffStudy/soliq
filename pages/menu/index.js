@@ -9,14 +9,12 @@ import All from '../../components/all'
 
 const Menu = () => {
 
-
-
     return (
         <All>
             <Tables>
                 <div className='container menu'>
                     <div className='soliqLogo'>
-                        <img src="https://play-lh.googleusercontent.com/WsnTVMB-ichRSKymTZ13f8M_Q_4XlfgofdYk3V4JsFe7J4nxYZ8J_YUZQxmWjs4zsYIf=s1200" alt="rasm" className='dfg' />
+                        <img src="https://play-lh.googleusercontent.com/WsnTVMB-ichRSKymTZ13f8M_Q_4XlfgofdYk3V4JsFe7J4nxYZ8J_YUZQxmWjs4zsYIf=s1200" alt="rasm" className='dfg2' />
                     </div>
                     <h2 className='text-center'> O'zbekiston Respublikasi
                         Davlat soliq qo'mitasi</h2>

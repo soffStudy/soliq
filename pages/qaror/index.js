@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import Documents from '../../styleW/documents';
+import { useRouter } from 'next/router'
+import Documents from '../../styleW/documents'
+import jsPDF from 'jspdf'
 import All from '../../components/all'
 
 
-
 const owners = [
-    { id: '1', owner: false, companyName: "MALIBU GARDEN MCHJ", soliqTuri: "QQS", davri: "Yanvar", muddat: "20.02.2021", sana: "25.02.2021", sum: 500, viloyatKodi: '50', tumanKodi: "1", kechuikkanKun: "5", jarimaSumma: "25.0" },
+    { id: '1', owner: false, companyName: "MALIBU GARDEN MCHJ", soliqTuri: "QQS", yil: "2021", oy: "феврал", kun1: "20", yil2: "2021", oy2: "mart", kun2: "25", kechikanKun: "5", rasmiyKun: "5", rasmiOy: "mart", sum: 500, viloyatKodi: '50', tumanKodi: "1", jarimaSumma: "25.0", moliyaviyJarima: "15", sorj: "10" },
 
-    { id: '2', owner: true, companyName: "COBALT GARDEN MCHJ", soliqTuri: "QQS", davri: "Mart", muddat: "20.02.2021", sana: "25.02.2021", sum: 700, viloyatKodi: '50', tumanKodi: "1", kechuikkanKun: "5", jarimaSumma: "25.0" },
+    { id: '2', owner: true, companyName: "COBALT GARDEN MCHJ", soliqTuri: "QQS", yil: "2021", oy: "феврал", kun1: "20", yil2: "2021", oy2: "mart", kun2: "25", kechikanKun: "5", rasmiyKun: "5", rasmiOy: "mart", sum: 500, viloyatKodi: '50', tumanKodi: "1", jarimaSumma: "25.0", moliyaviyJarima: "15", sorj: "10" },
 
-    { id: '3', owner: true, companyName: "NEXIA GARDEN MCHJ", soliqTuri: "QQS", davri: "Noyabr", muddat: "20.02.2021", sana: "25.02.2021", sum: 860, viloyatKodi: '50', tumanKodi: "1", kechuikkanKun: "5", jarimaSumma: "25.0" },
+    { id: '3', owner: false, companyName: "MATIZ GARDEN MCHJ", soliqTuri: "QQS", yil: "2021", oy: "феврал", kun1: "20", yil2: "2021", oy2: "mart", kun2: "25", kechikanKun: "5", rasmiyKun: "5", rasmiOy: "mart", sum: 500, viloyatKodi: '50', tumanKodi: "1", jarimaSumma: "25.0", moliyaviyJarima: "15", sorj: "10" },
 
-    { id: '4', owner: false, companyName: "MATIZ GARDEN MCHJ", soliqTuri: "QQS", davri: "Sentabr", muddat: "20.02.2021", sana: "25.02.2021", sum: 1200, viloyatKodi: '50', tumanKodi: "1", kechuikkanKun: "5", jarimaSumma: "25.0" },
+    { id: '4', owner: true, companyName: "NEXIA GARDEN MCHJ", soliqTuri: "QQS", yil: "2021", oy: "феврал", kun1: "20", yil2: "2021", oy2: "mart", kun2: "25", kechikanKun: "5", rasmiyKun: "5", rasmiOy: "mart", sum: 500, viloyatKodi: '50', tumanKodi: "1", jarimaSumma: "25.0", moliyaviyJarima: "15", sorj: "10" },
 
-    { id: '5', owner: true, companyName: "DAMAS GARDEN MCHJ", soliqTuri: "QQS", davri: "Oktabr", muddat: "20.02.2021", sana: "25.02.2021", sum: 3200, viloyatKodi: '50', tumanKodi: "1", kechuikkanKun: "5", jarimaSumma: "25.0" }
+    { id: '5', owner: false, companyName: "EPICA GARDEN MCHJ", soliqTuri: "QQS", yil: "2021", oy: "феврал", kun1: "20", yil2: "2021", oy2: "mart", kun2: "25", kechikanKun: "5", rasmiyKun: "5", rasmiOy: "mart", sum: 500, viloyatKodi: '50', tumanKodi: "1", jarimaSumma: "25.0", moliyaviyJarima: "15", sorj: "10" }
 ]
 
-const Qaror = () => {
+const Bayonnoma = () => {
+    const router = useRouter()
     let fullData = [];
 
     const [state, setstate] = useState(1);
@@ -26,66 +28,126 @@ const Qaror = () => {
 
     }, []);
 
-    let today = new Date();
-    let time = today.getHours() + ":" + today.getMinutes();
-    console.log(time);
 
 
     owners.map(value => {
         if (value.id == state) fullData = value;
-    });
+    })
+
+
+    const printPageFun = (divName) => {
+        var printContents = document.getElementById(divName).innerHTML
+        var originalContents = document.body.innerHTML
+        document.body.innerHTML = printContents
+        window.print()
+        document.body.innerHTML = originalContents
+    }
 
 
     return (
         <All>
             <Documents>
                 <div className="container">
-                    <div className='bayonnoma mt-5'>
+                    <div className='d-flex justify-content-end mt-2'>
+
+                        <button className='btn btn-primary' onClick={() => printPageFun('print')}>print Page</button>
+
+                    </div>
+                    <div className='bayonnoma mt-5' id='print'>
                         <div className='d-flex justify-content-center'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" alt="Rasm" width="100" height='100' />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" alt="Rasm" width="50" height='50' />
                         </div>
 
-                        <div className='d-flex justify-content-between m-3 qaror'>
-                            <div className='qaror2'>
-                                <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ
-                                    ФАРМОНИ</p>
-                                <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ АЙРИМ ҲУЖЖАТЛАРИГА ЎЗГАРТИШЛАР КИРИТИШ ТЎҒРИСИДА</p>
-                            </div>
-
-                            <div className='qaror2'>
-                                <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ
-                                    ФАРМОНИ</p>
-                                <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ПРЕЗИДЕНТИНИНГ АЙРИМ ҲУЖЖАТЛАРИГА ЎЗГАРТИШЛАР КИРИТИШ ТЎҒРИСИДА</p>
-                            </div>
-                        </div>
-
-                        <h3 className='text-center'>Qaror</h3>
 
                         <div className='iform'>
-                            <p> <span className={fullData.owner ? "green" : "red"}>{fullData.companyName}</span> ipsum dolor sit amet consectetur, adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, <span className={fullData.owner ? "green" : "red"}>{fullData.soliqTuri}</span> . Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio <span className={fullData.owner ? "green" : "red"}>{fullData.davri}</span>  a velit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laborum alias consequuntur, amet cupiditate soluta natus quia laudantium libero quidem saepe assumenda dolore nam repellendus porro tempora voluptas consequatur reiciendis!</p>
-                            <p>Lorem ipsum dolor sit amet <span className={fullData.owner ? "green" : "red"}>{fullData.sana}</span> , adipisicing elit. Sunt corporis, dolores eum enim sequi ex minus vitae sint, earum pariatur molestias nisi eveniet suscipit distinctio odio doloribus deleniti a velit?</p>
-                            <p>КИРИТИШ ТЎҒРИСИДА
-                                Ўзбекистон Республикаси Президентининг «Ўзбекистон Республикасининг Интеллектуал мулк агентлигини ташкил этиш тўғрисида» 2011 йил 24 майдаги ПҚ-1536-сонли қарорига мувофиқ:</p>
-                            <p>1. Korxona nomi:  айрим ҳужжатларига иловага мувофиқ ўзгартишлар киритилсин.</p>
-                            <p>2. Мазкур Фармоннинг ижросини назорат қилиш Ўзбекистон Республикаси Бош вазирининг ўринбосари А.Н. Арипов зиммасига юклансин.</p>
 
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.muddat}</span>aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.sum}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias em, ipsum dolor sit amet consectetur adipisici sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.viloyatKodi}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aperiam necessitatibus doloribus molestias sapiente <span className={fullData.owner ? "green" : "red"}>{fullData.tumanKodi}</span> $ aspernatur, vero illum deleniti quibusdam, numquam dolor magnam reprehenderit fugiat. Deserunt libero quo eaque corrupti?</p>
+                            <p className='fw-bold text-center mb-0'>Солиқ тўловчини солиққа оид ҳуқуқбузарлик содир этганлик учун жавобгарликка тортиш бўйича</p>
+                            <p className='fw-bold fs-5 text-center'>
+                                Қ А Р О Р И № ___
+                            </p>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.kechuikkanKun}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
+                            <p>
+                                <span className='ms-5'>Йирик</span> солиқ тўловчилар бўйича ҳудудлараро давлат солиқ инспекцияси <span className={fullData.owner ? "green" : "red"}>{fullData.companyName}</span> томонидан  <span className={fullData.owner ? "green" : "red"}>{fullData.soliqTuri}</span>  (<span className={fullData.owner ? "green" : "red"}>{fullData.tumanKodi}</span>  код) солиғи бўйича <span className={fullData.owner ? "green" : "red"}>{fullData.yil}</span>  йил <span className={fullData.owner ? "green" : "red"}>{fullData.kun1}</span>  <span className={fullData.owner ? "green" : "red"}>{fullData.oy}</span> да тақдим этилиши лозим бўлган солиқ ҳисоботини <span className={fullData.owner ? "green" : "red"}>{fullData.kechikanKun}</span> кунга кечиктириб, жорий йилнинг <span className={fullData.owner ? "green" : "red"}>{fullData.kun2}</span> <span className={fullData.owner ? "green" : "red"}>{fullData.oy2}</span>да <span className={fullData.owner ? "green" : "red"}>{fullData.sum}</span>,0 млн сўм кўрсатган ҳолда тақдим этилганлиги юзасидан тузилган далолатнома ва  <span className={fullData.owner ? "green" : "red"}>{fullData.yil2}</span> йил <span className={fullData.owner ? "green" : "red"}>{fullData.rasmiyKun}</span> <span className={fullData.owner ? "green" : "red"}>{fullData.rasmiOy}</span> расмийлаштирилган баённомаси билан танишиб чиқиб, қуйидагилар
+                            </p>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ullam non ad dolore et explicabo aperiam <span className={fullData.owner ? "green" : "red"}>{fullData.jarimaSumma}</span> iure voluptate ab accusamus laboriosam expedita libero veniam, nesciunt qui minima commodi.</p>
+                            <p className='fw-bold fs-5 text-center'>
+                                А Н И Қ Л А Н Д И:
+                            </p>
 
-                            <p className='text-end'>{time}</p>
+                            <p className='fw-bold ms-5'>I.
+                                Солиқ ҳисоботларини кечиктириб топшириш юзасидан жарима ҳисоблаш бўйича
+                            </p>
+                            <p className=' ms-5'>
+                                Қуйидагилар аниқланган:
+                            </p>
+                            <p>
+                                <span className='fw-bold ms-5'>1.1.</span>  Солиқ кодексининг 82, 269-моддалари талаблари бузилганлиги инобатга олиниб, жамият томонидан 1 та ҳолатда (<span className={fullData.owner ? "green" : "red"}>{fullData.tumanKodi}</span>  код) қўшилган қиймат солиғи бўйича ҳисоботни <span className={fullData.owner ? "green" : "red"}>{fullData.kechikanKun}</span>  кунга кечиктириб тақдим этганлиги учун жами <span className={fullData.owner ? "green" : "red"}>{fullData.jarimaSumma}</span> ,0 млн. сўм жарима (молиявий санкция) ҳисоблаб чиқилди.
+                            </p>
+
+                            <p>
+                                <span className='ms-5'>Ўзбекистон</span> Республикаси “Давлат солиқ ҳизмати тўғрисида”ги Қонунининг 5-моддасининг 9-бандига, Ўзбекистон Республикаси Солиқ кодексининг 220-моддаси талабларига, солиқ ҳисоботи маълумотларига, кечиктириб тақдим этилган солиқ ҳисоботи бўйича тузилган далолатнома ва кечиктириб тақдим этилган солиқ ҳисоботини кўриб чиқиш баённомасига асосан
+                            </p>
+
+                            <p className='fw-bold fs-5 text-center'>
+                                Қ  А  Р  О  Р     Қ  И  Л  А  М  А  Н:
+                            </p>
+                            <p className='ms-5'>
+                                <span className={fullData.owner ? "green" : "red"}>{fullData.companyName}</span> раҳбарига:
+                            </p>
+
+                            <p className='fw-bold ms-5'>I.
+                                Солиқ ҳисоботларини кечиктириб топшириш юзасидан жарима ҳисоблаш бўйича
+                            </p>
+                            <p>
+                                <span className='ms-5'>Солиқ </span> кодексининг 220-моддасига асосан, солиқ ҳисоботларини кечиктириб тақдим қилганлиги учун ҳамиятга нисбатан ҳисобланган жарима (молиявий санкция) тегишли ҳисоб рақамларига мустақил равишда, қарор солиқ тўловчига берилган кундан эътиборан бир ойдан ошмаган муддат ичида ўтказилиб берилсин. Жумладан;
+                            </p>
+                            <p>
+                                <span className='ms-5 fw-bold'>1.1.</span>Жамият томонидан ( <span className={fullData.owner ? "green" : "red"}>{fullData.tumanKodi}</span>  код) қўшилган қиймат солиғи бўйича ҳисоботни  <span className={fullData.owner ? "green" : "red"}>{fullData.kechikanKun}</span>  кунга кечиктириб тақдим этганлиги учун  <span className={fullData.owner ? "green" : "red"}>{fullData.jarimaSumma}</span> млн. сўм жарима (молиявий санкция) қўлланилсин;
+                            </p>
+                            <p>
+                                <span className='ms-5  fw-bold'>1.2.</span> Солиқ кодексининг 100-моддаси 4-қисмига кўра, олти ой мобайнида тенг улушларда тўлаш ва 218-моддасининг 4-қисмига асосан ўн кун ичида ихтиёрий тўланганда жарима суммаси икки баравар камайтирилиши каби ҳуқуқлари тушунтирилсин.
+                            </p>
+                            <p>
+                                <span className='ms-5  fw-bold'> 1.3.</span> Жамиятга нисбатан ҳисобланган _________________ сўм жарима (молиявий санкция) тегишли бюджет жамғармаларга ўтказилсин:
+                            </p>
+
+                            <p>
+                                Х/Р: 20015868763192156875731 <span className={fullData.owner ? "green" : "red"}>{fullData.moliyaviyJarima}</span> млн сўм (Молиявий жарима-60%)
+                            </p>
+
+                            <p>
+                                Х/Р: 21560042579335871369822 <span className={fullData.owner ? "green" : "red"}>{fullData.sorj}</span> млн сўм (СОРЖ жами-40%)
+                            </p>
+                            <div className="d-flex justify-content-between fw-bold mt-1">
+                                <div className="ms-5">
+                                    <p>
+                                        Бошлиқнинг
+                                        биринчи ўринбосари
+                                    </p>
+                                </div>
+
+                                <div className="me-5">
+                                    <p>
+                                        Ф.Ахмедов
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            {/* <p>Soliq turi: {fullData.soliqTuri}</p>
+                        <p>Kredit olingan sana: {fullData.davri}</p>
+                        <p>To'lash kerak bo'lgan  sana: {fullData.muddat}</p>
+                        <p>To'lov qiymati: {fullData.sum}</p>
+                        <p> Viloyat kodi: {fullData.viloyatKodi}</p>
+                        <p> Tuman kodi:{fullData.tumanKodi}</p>
+                        <p>Kechikkan kun: {fullData.kechuikkanKun}</p>
+                        <p>Jarima Summasi: {fullData.jarimaSumma}</p> */}
 
                         </div>
                     </div>
-                </div>
 
+                </div>
 
 
 
@@ -94,4 +156,4 @@ const Qaror = () => {
     )
 }
 
-export default Qaror
+export default Bayonnoma
