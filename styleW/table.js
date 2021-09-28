@@ -28,10 +28,12 @@ const Tables = styled.div`
     }
 
     .menu{
-        min-height: 80vh;
+        min-height: 100vh;
         width: 100% !important;
-        background-image: linear-gradient(to left bottom, #dedede, #e6e6e6, #eeeeee, #f7f7f7, #ffffff);
+        background-image:url("https://soliq.uz/sadmin/storage/news/June2020/12cf4cf245894ea98aa635caeded02fb_30062020.jpg");
         margin-top: 10px;
+        border-radius: 5px;
+        padding-top: 250px;
     }
     .twCards{
         width: 100% !important;

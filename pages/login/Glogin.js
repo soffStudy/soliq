@@ -6,6 +6,8 @@ import Menu from "../menu"
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 
+// Bu yrda email va password tekshiriladi
+
 function Glogin() {
   const router = useRouter();
 

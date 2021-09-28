@@ -13,12 +13,12 @@ const Menu = () => {
         <All>
             <Tables>
                 <div className='container menu'>
-                    <div className='soliqLogo'>
+                    {/* <div className='soliqLogo'>
                         <img src="https://play-lh.googleusercontent.com/WsnTVMB-ichRSKymTZ13f8M_Q_4XlfgofdYk3V4JsFe7J4nxYZ8J_YUZQxmWjs4zsYIf=s1200" alt="rasm" className='dfg2' />
-                    </div>
-                    <h2 className='text-center'> O'zbekiston Respublikasi
+                    </div> */}
+                    {/* <h2 className='text-center'> O'zbekiston Respublikasi
                         Davlat soliq qo'mitasi</h2>
-                    <h4 className='text-center mb-5'>Turli xildagi xizmatlar uchun</h4>
+                    <h4 className='text-center mb-5'>Turli xildagi xizmatlar uchun</h4> */}
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className='m-1'>
