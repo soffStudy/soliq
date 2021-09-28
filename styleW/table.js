@@ -30,6 +30,8 @@ const Tables = styled.div`
     .menu{
         min-height: 80vh;
         width: 100% !important;
+        background-image: linear-gradient(to left bottom, #dedede, #e6e6e6, #eeeeee, #f7f7f7, #ffffff);
+        margin-top: 10px;
     }
     .twCards{
         width: 100% !important;
@@ -56,29 +58,35 @@ const Tables = styled.div`
             transition: 0.3s;
             padding: 20px;
             border-radius: 10px;
-            color: white;
+            color: rgba(6, 8, 85, 1);
             font-weight: bold;
             font-size: 20px !important;
             width: 300px;
             height:200px;
             object-fit: cover;
-            box-shadow: 3px 4px 10px black;
+            box-shadow: 3px 4px 10px rgba(6, 8, 85, 1);
+            background-color:  rgba(255, 255, 255, 0.473);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
 
-           /* &:hover{
-               box-shadow: 3px 4px 10px black;
-           } */
+           &:hover{
+               box-shadow: 5px 6px 10px rgba(6, 8, 85,1);
+           }
          
         }
     }
     .documentwords{
-        margin: 20px;
+        margin: 10px;
         padding: 10px;
         text-align: center;
+        color: white;
+        text-shadow: 1px 2px  rgba(6, 8, 85, 0.5);
     }
     .btnKirish{
-        border: 2px solid white;
+        border: 2px solid rgba(6, 8, 85, 1);
         border-radius: 15px;
-        color: white;
+        color: rgba(6, 8, 85, 1);
         font-weight: bold;
     }
    .soliqLogo{
@@ -123,11 +131,20 @@ const Tables = styled.div`
    }
    .menuRightc{
        .dfg{
+           margin: 10px;
            width: 50px;
            height: 50px;
            object-fit: cover;
        }
    }
+
+   .dfg2{
+           margin: 10px;
+           width: 50px;
+           height: 50px;
+           object-fit: cover;
+           border-radius: 20%;
+       }
    .yashil{
     background-color: #8FFFA2;
    }

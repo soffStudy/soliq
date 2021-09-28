@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Documents = styled.div`
+font-family: 'Times New Roman', Times, serif;
 .bayonnoma{
     padding: 10px;
     margin: 10px;

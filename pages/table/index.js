@@ -72,13 +72,13 @@ const Table = () => {
                                                 <tr key={i} className={v.owner ? "yashil" : "qizil"} onClick={() => handleRowClick(v.id)}>
                                                     <td>{v.companyName}</td>
                                                     <td>{v.soliqTuri}</td>
-                                                    <td>{v.davri}</td>
-                                                    <td>{v.muddat}</td>
-                                                    <td>{v.sana}</td>
+                                                    <td>{v.oy}</td>
+                                                    <td>{v.muddati}</td>
+                                                    <td>{v.sanasi}</td>
                                                     <td>{v.sum}</td>
                                                     <td>{v.viloyatKodi}</td>
                                                     <td>{v.tumanKodi}</td>
-                                                    <td>{v.kechuikkanKun}</td>
+                                                    <td>{v.kechikanKun}</td>
                                                     <td>{v.jarimaSumma}</td>
 
                                                 </tr>
