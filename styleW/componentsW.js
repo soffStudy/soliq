@@ -47,6 +47,11 @@ const Components = styled.div`
 
     }
 }
+.kl{
+    padding: 5px 0;
+    border-radius: 10px;
+    background-color: white;
+}
 
 .locked{
     position: sticky;
