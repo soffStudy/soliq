@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const FormWrapper = styled.div`
-    
+   
+
     .button {
         appearance: none;
         background: none;
@@ -19,7 +20,6 @@ export const FormWrapper = styled.div`
     form {
         display: block;
         position: relative;
-        
     }
 
 
@@ -47,6 +47,7 @@ export const FormWrapper = styled.div`
         border: 4px solid #223157;
         width: 500px;
         font-weight: bold;
+        opacity: 0.9;
     }
 
     .form-inner{
@@ -73,7 +74,7 @@ export const FormWrapper = styled.div`
         }
     }
     .form-inner .form-group:focus-within label {
-        color: rgb(62, 216, 62);
+        color: rgb(11, 11, 134);
     }
 
     form .form-inner .form-group input {
