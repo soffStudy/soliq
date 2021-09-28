@@ -69,15 +69,11 @@ export const FormWrapper = styled.div`
                 margin-bottom: 5px;
                 transition: 0.4s;
             }
-            input {
-                font-weight: bold;
-                color: #888;
-                font-style: italic;
-            }
+           
         }
     }
     .form-inner .form-group:focus-within label {
-        color: #FE4880;
+        color: rgb(62, 216, 62);
     }
 
     form .form-inner .form-group input {
@@ -97,8 +93,10 @@ export const FormWrapper = styled.div`
         display: block;
         padding: 10px 15px;
         border-radius: 8px;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        background-color: blue;
+        background: linear-gradient(90deg, rgb(25, 14, 184)10%, rgb(6, 6, 114)80%);
+        /* background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
         background-size: 200%;
         background-position: 0%;
         transition: 0.4s;
