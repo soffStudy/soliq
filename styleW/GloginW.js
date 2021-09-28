@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const GloginW = styled.div`
- background: url(https://xs.uz/upload/post/2019/18/0a6433e2215892c62ac28817a05ed0a51218.jpg);
     .App {
     display: flex !important;
     align-items: center !important;
