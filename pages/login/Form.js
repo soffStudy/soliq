@@ -5,7 +5,6 @@ import { FormWrapper } from './../../styleW/formWrap';
 import Logo from './soliq.jpg'
 
 const Form = ({ Login, error }) => {
-    const router = useRouter()
     const [details, setDetails] = useState({ name: "", email: "", password: "", role: "" });
 
     const submitHandler = e => {
@@ -13,41 +12,51 @@ const Form = ({ Login, error }) => {
         Login(details);
         console.log(e.target.value);
     }
+
+    
+ 
     return (
         <FormWrapper>
-            <form onSubmit={submitHandler}>
+            <div className="row mt-3">
+                <div className="col-6 ofset-3">
+                <form onSubmit={submitHandler}>
                 <div className="form-inner">
-                    <img src="https://play-lh.googleusercontent.com/WsnTVMB-ichRSKymTZ13f8M_Q_4XlfgofdYk3V4JsFe7J4nxYZ8J_YUZQxmWjs4zsYIf=s1200" alt="" className='rasm' />
+                   
                     <div className="nature">
+                    <Image src={Logo} alt="" className='nature_img' />
                     </div>
                     <div className="login_otish">
                         <h2>Ro'yhatdan o'tish</h2>
                     </div>
                     <div className="radio_button">
                         <input type="radio" value="user" name="radio" onChange={(e) => setDetails({ admin: e.target.value })} />
-                        <label>Users</label>
+                        <label className="text-secondary">Users</label>
                         <input type="radio" value="admin" name="radio" onChange={(e) => setDetails({ admin: e.target.value })} />
-                        <label>Admin</label>
+                        <label className="text-secondary">Admin</label>
                     </div>
                     <div className="text-danger">
                         {(error != "") ? (<div className="error">{error}</div>) : ""}
                     </div>
                     <div className="form-group">
-                        <label htmlFor="name">Isim: </label>
+                        <label htmlFor="name">Ism: </label>
                         <input type="text" name="name" id="name" className="fjf" onChange={e => setDetails({ ...details, name: e.target.value })} value={details.name} onClick={console.log(details.name)} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Elektron pochta: </label>
-                        <input type="text" name="email" id="email" className="fjf" onChange={e => setDetails({ ...details, email: e.target.value })} value={details.email} onClick={console.log(details.email)} />
+                        <input type="email" name="email" id="email" className="fjf" onChange={e => setDetails({ ...details, email: e.target.value })} value={details.email} onClick={console.log(details.email)} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="password">Parol: </label>
                         <input type="password" name="password" id="password" className="fjf" onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
                     </div>
-                    <input type="submit" value="Kirish" className="fjf" />
+                    <div className="submits">
+                        <input type="submit" value="Kirish" className="fjf" />
+                    </div>
 
                 </div>
             </form>
+                </div>
+            </div>
         </FormWrapper>
     )
 }

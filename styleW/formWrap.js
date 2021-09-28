@@ -19,13 +19,11 @@ export const FormWrapper = styled.div`
     form {
         display: block;
         position: relative;
-        height: 540px;
-        width: 300px;
-        margin-top: 20px;
+        
     }
 
 
-    form::after {
+    /* form::after {
         content: '';
         display: block;
         position: absolute;
@@ -35,9 +33,9 @@ export const FormWrapper = styled.div`
         bottom: -5px;
         z-index: 1;
         background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
         border-radius: 10px;
-    }
+        width: 500px;
+    } */
 
     .form-inner {
         position: relative;
@@ -46,7 +44,9 @@ export const FormWrapper = styled.div`
         padding: 30px;
         z-index: 2;
         border-radius: 10px;
-        
+        border: 4px solid #223157;
+        width: 500px;
+        font-weight: bold;
     }
 
     .form-inner{
@@ -59,7 +59,7 @@ export const FormWrapper = styled.div`
 
         .form-group {
         display: block;
-        width: 250px;
+        width: 100%;
         margin-bottom: 15px;
         margin-top: 20px;
                 label {
@@ -68,6 +68,11 @@ export const FormWrapper = styled.div`
                 font-size: 12px;
                 margin-bottom: 5px;
                 transition: 0.4s;
+            }
+            input {
+                font-weight: bold;
+                color: #888;
+                font-style: italic;
             }
         }
     }
@@ -107,7 +112,8 @@ export const FormWrapper = styled.div`
     }
 
     .nature_img {
-        height: 100% !important;
+        width: 40px;
+        height: 40px !important;
     }
 
     .nature {
@@ -117,7 +123,7 @@ export const FormWrapper = styled.div`
         margin-bottom: 10px;
         height: 60px;
         img{
-            height: 85px;
+            height: 70px;
         }
     }
 
@@ -138,10 +144,15 @@ export const FormWrapper = styled.div`
     .radio_button>label {
         margin-right: 10px;
     }
-    .rasm{
+    .submits{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    /* .rasm{
         width: 100px;
         height: 100px;
         object-fit: cover;
-    }
+    } */
    
 `;

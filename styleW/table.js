@@ -71,7 +71,7 @@ const Tables = styled.div`
         }
     }
     .documentwords{
-        margin: 20px;
+        margin: 10px 20px;
         padding: 10px;
         text-align: center;
     }

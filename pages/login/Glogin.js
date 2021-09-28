@@ -7,7 +7,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 
 function Glogin() {
-  const router = useRouter()
+  const router = useRouter();
 
   const adminUser = {
     email: "akromovibrohim7@gmail.com",
@@ -32,7 +32,7 @@ function Glogin() {
       })
       router.push("menu")
     } else {
-      console.log("details topilmadi");
+      // console.log("details topilmadi");
 
       // console.log(details);
 

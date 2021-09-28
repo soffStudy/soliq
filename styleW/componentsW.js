@@ -4,7 +4,7 @@ const Components = styled.div`
 
 .dashboard{
     background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
-    min-height: 95vh;
+    min-height: 97vh;
     transition: 0.3s;
     border-radius: 5px;
     padding: 10px;
