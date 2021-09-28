@@ -3,6 +3,9 @@ import Components from '../styleW/componentsW'
 import Link from 'next/link'
 import { AiOutlineUnorderedList, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { HiOutlineDocumentText } from "react-icons/hi";
+// import Slide from 'react-reveal/Slide';
+
+
 
 
 const Dashboard = () => {
