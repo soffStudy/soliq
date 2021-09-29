@@ -17,7 +17,7 @@ function Glogin() {
   }
 
   const [user, setUser] = useState({ name: "", email: "" });
-  const [errorr, setErrorr] = useState("");
+  const [error, setError] = useState("");
 
   const Login = details => {
 
@@ -38,7 +38,7 @@ function Glogin() {
 
       // console.log(details);
 
-      setErrorr("Error")
+      setError("Error")
     }
   }
 
@@ -54,7 +54,7 @@ function Glogin() {
             <CircularProgress />
           </Box>
         ) : (
-          <Form Login={Login} errorr={errorr} />
+          <Form Login={Login} error={error} />
         )}
       </div>
     </GloginW>

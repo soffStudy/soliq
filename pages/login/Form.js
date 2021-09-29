@@ -12,6 +12,7 @@ const Form = ({ Login, error }) => {
         Login(details);
         console.log(e.target.value);
     }
+
     // bu yerda malumotlar kiritiladi va tekshiriladi. Agar togri bolsa yozilgan page ga otadi, notogri bolsa otmaydi
 
 
@@ -31,9 +32,9 @@ const Form = ({ Login, error }) => {
                             </div>
                             <div className="radio_button">
                                 <input type="radio" value="user" name="radio" onChange={(e) => setDetails({ admin: e.target.value })} />
-                                <label className="text-secondary">Users</label>
+                                <label className="text-secondary ms-2">Users</label>
                                 <input type="radio" value="admin" name="radio" onChange={(e) => setDetails({ admin: e.target.value })} />
-                                <label className="text-secondary">Admin</label>
+                                <label className="text-secondary ms-2">Admin</label>
                             </div>
                             <div className="text-danger">
                                 {(error != "") ? (<div className="error">{error}</div>) : ""}
