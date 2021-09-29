@@ -2,47 +2,19 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router';
 import Image from 'next/image'
 import { FormWrapper } from './../../styleW/formWrap';
-import Logo from './../../public/soliq2.png'
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-import FormHelperText from '@mui/material/FormHelperText';
+import { AiOutlineRadiusUpright } from 'react-icons/ai';
 
-const Form = ({ Login, errorr }) => {
+const Form = ({ Login, error }) => {
     const [details, setDetails] = useState({ name: "", email: "", password: "", role: "" });
-
-    const [value, setValue] = React.useState('');
-    const [error, setError] = React.useState(false);
-    const [helperText, setHelperText] = React.useState('Choose wisely');
-
-    const handleRadioChange = (event) => {
-        setValue(event.target.value);
-        setHelperText(' ');
-        setError(false);
-      };
 
     const submitHandler = e => {
         e.preventDefault();
         Login(details);
         console.log(e.target.value);
-        
-
-        e.preventDefault();
-
-    if (value === 'best') {
-      setHelperText('You got it!');
-      setError(false);
-    } else if (value === 'worst') {
-      setHelperText('Sorry, wrong answer!');
-      setError(true);
-    } else {
-      setHelperText('Please select an option.');
-      setError(true);
-    }
     }
     // bu yerda malumotlar kiritiladi va tekshiriladi. Agar togri bolsa yozilgan page ga otadi, notogri bolsa otmaydi
+
+
 
     return (
         <FormWrapper>
@@ -50,24 +22,24 @@ const Form = ({ Login, errorr }) => {
                 <div className="col-6 ofset-3">
                     <form onSubmit={submitHandler}>
                         <div className="form-inner">
+
                             <div className="nature">
-                            <Image src={Logo} alt="" className='nature_img' />
+                                <img src="soliq.jpg" alt="" className='nature_img' />
                             </div>
                             <div className="login_otish">
                                 <h2>Ro'yhatdan o'tish</h2>
                             </div>
-                            <FormControl component="fieldset" className="formControl">
-                                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" value={value} onChange={handleRadioChange}>
-                                    <FormControlLabel value="user" control={<Radio />} label="Users" onChange={(e) => setDetails({ user: e.target.value })} />
-                                    <FormControlLabel value="admin" control={<Radio />} label="Admin" onChange={(e) => setDetails({ user: e.target.value })}/>
-                                </RadioGroup>
-                                <FormHelperText className="helper">{helperText}</FormHelperText>
-                            </FormControl>
+                            <div className="radio_button">
+                                <input type="radio" value="user" name="radio" onChange={(e) => setDetails({ admin: e.target.value })} />
+                                <label className="text-secondary">Users</label>
+                                <input type="radio" value="admin" name="radio" onChange={(e) => setDetails({ admin: e.target.value })} />
+                                <label className="text-secondary">Admin</label>
+                            </div>
                             <div className="text-danger">
-                                {(errorr != "") ? (<div className="error">{errorr}</div>) : ""}
+                                {(error != "") ? (<div className="error">{error}</div>) : ""}
                             </div>
                             <div className="form-group">
-                                <label htmlFor="name">Ism: </label> 
+                                <label htmlFor="name">Ism: </label>
                                 <input type="text" name="name" id="name" className="fjf" onChange={e => setDetails({ ...details, name: e.target.value })} value={details.name} onClick={console.log(details.name)} />
                             </div>
                             <div className="form-group">
@@ -81,6 +53,7 @@ const Form = ({ Login, errorr }) => {
                             <div className="submits">
                                 <input type="submit" value="Kirish" className="fjf" />
                             </div>
+
                         </div>
                     </form>
                 </div>
