@@ -1,13 +1,23 @@
 import styled from "styled-components";
 
 export const FormWrapper = styled.div`
-   
 
     .button {
         appearance: none;
         background: none;
         border: none;
         outline: none;
+    }
+
+    .helper{
+        color: red;
+    }
+
+    .formControl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
     }
 
     .fjf {
@@ -22,21 +32,6 @@ export const FormWrapper = styled.div`
         position: relative;
     }
 
-
-    /* form::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: -5px;
-        left: -5px;
-        right: -5px;
-        bottom: -5px;
-        z-index: 1;
-        background: rgb(2,0,36);
-        border-radius: 10px;
-        width: 500px;
-    } */
-
     .form-inner {
         position: relative;
         display: block;
@@ -46,11 +41,9 @@ export const FormWrapper = styled.div`
         border-radius: 10px;
         border: 4px solid #223157;
         width: 500px;
+        height: 590px;
         font-weight: bold;
         opacity: 0.9;
-    }
-
-    .form-inner{
         h2 {
         color: #888;
         font-size: 28px;
@@ -73,6 +66,10 @@ export const FormWrapper = styled.div`
            
         }
     }
+    .css-1nrlq1o-MuiFormControl-root{
+        height: 70px;
+    }
+
     .form-inner .form-group:focus-within label {
         color: rgb(11, 11, 134);
     }
@@ -96,8 +93,6 @@ export const FormWrapper = styled.div`
         border-radius: 8px;
         background-color: blue;
         background: linear-gradient(90deg, rgb(25, 14, 184)10%, rgb(6, 6, 114)80%);
-        /* background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
         background-size: 200%;
         background-position: 0%;
         transition: 0.4s;
@@ -110,17 +105,12 @@ export const FormWrapper = styled.div`
         background-position: 100%, 0%;
     }
 
-    .nature_img {
-        width: 40px;
-        height: 40px !important;
-    }
-
     .nature {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 10px;
-        height: 60px;
+        height: 50px;
         img{
             height: 70px;
         }
@@ -148,10 +138,20 @@ export const FormWrapper = styled.div`
         align-items: center;
         justify-content: end;
     }
-    /* .rasm{
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-    } */
+
+    @media screen and (max-width: 700px) {
+        .form-inner {
+            width: 300px;
+            h2{
+                font-size: 23px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .fjf{
+                font-weight: 300;
+                font-size: 15px;
+            }
+        }
+    }
    
 `;
