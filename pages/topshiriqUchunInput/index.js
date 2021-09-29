@@ -1,18 +1,22 @@
 import React from 'react'
 import All from '../../components/all'
 import Link from 'next/link'
-
+import { WorkWrapper } from '../../styleW/documentTW'
+import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 
 const Inputs = () => {
     return (
         <All>
-            <div>
+            <WorkWrapper>
                 <div className="container bg1">
-                    <Link href='topshiriq'>
-                        <a>
-                            <button className='btn btn-primary'>orqaga qaytish</button>
-                        </a></Link>
+                    <div className="workTime">
+                        <Link href='topshiriq'>
+                            <a>
+                            <button className='btn btn-primary'><AiOutlineDoubleLeft/></button>
+                            </a>
+                        </Link>
+                    </div>
                     <div className="row bg2">
                         <h1 className='text-center p-2'>Yangi topshiriq</h1>
                         <div className="col-md-6 col-sm-12">
@@ -57,7 +61,7 @@ const Inputs = () => {
                     </div>
                 </div>
 
-            </div>
+            </WorkWrapper>
         </All>
     )
 }
