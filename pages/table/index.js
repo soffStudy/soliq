@@ -6,6 +6,8 @@ import { BiDownload } from "react-icons/bi"
 import { CSVLink, CSVDownload } from 'react-csv'
 import All from '../../components/all'
 import Link from 'next/link'
+import { AiOutlineDoubleLeft } from 'react-icons/ai';
+
 
 
 // Bu page da table dagi istalgan malumotlarni ustiga bosilganda shu klientni page iga otadi
@@ -39,14 +41,17 @@ const Table = () => {
         <All>
             <Tables>
                 <div className='p-4'>
+                    <div>
+                        <Link href='topshiriq'>
+                            <a>
+                                <button className='btn btn-primary'><AiOutlineDoubleLeft /></button>
+                            </a>
+                        </Link>
+                    </div>
                     <h3 className='text-center m-3 mb-5'>Mijozlar haqidagi to'liq ma'lumot</h3>
                     <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
                     <div className='d-flex justify-content-end'>
-                        <Link href='qaror'>
-                            <a>
-                                <button className='btn btn-primary'>orqaga</button>
-                            </a>
-                        </Link>
+
                         <CSVLink className='btn btn-primary fs-4' data={owners}><BiDownload /></CSVLink>
                     </div>
 
