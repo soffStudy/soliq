@@ -42,47 +42,47 @@ const Form = ({ Login, errorr }) => {
       setError(true);
     }
     }
+    // bu yerda malumotlar kiritiladi va tekshiriladi. Agar togri bolsa yozilgan page ga otadi, notogri bolsa otmaydi
 
     return (
         <FormWrapper>
             <div className="row mt-3">
                 <div className="col-6 ofset-3">
-                <form onSubmit={submitHandler}>
-                <div className="form-inner">
-                    <div className="nature">
-                    <Image src={Logo} alt="" className='nature_img' />
-                    </div>
-                    <div className="login_otish">
-                        <h2>Ro'yhatdan o'tish</h2>
-                    </div>
-                    <FormControl component="fieldset" className="formControl">
-                        <RadioGroup row aria-label="gender" name="row-radio-buttons-group" value={value} onChange={handleRadioChange}>
-                            <FormControlLabel value="user" control={<Radio />} label="Users" onChange={(e) => setDetails({ user: e.target.value })} />
-                            <FormControlLabel value="admin" control={<Radio />} label="Admin" onChange={(e) => setDetails({ user: e.target.value })}/>
-                        </RadioGroup>
-                        <FormHelperText className="helper">{helperText}</FormHelperText>
-                    </FormControl>
-                    <div className="text-danger">
-                        {(errorr != "") ? (<div className="error">{errorr}</div>) : ""}
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="name">Ism: </label> 
-                        <input type="text" name="name" id="name" className="fjf" onChange={e => setDetails({ ...details, name: e.target.value })} value={details.name} onClick={console.log(details.name)} />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="email">Elektron pochta: </label>
-                        <input type="email" name="email" id="email" className="fjf" onChange={e => setDetails({ ...details, email: e.target.value })} value={details.email} onClick={console.log(details.email)} />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="password">Parol: </label>
-                        <input type="password" name="password" id="password" className="fjf" onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
-                    </div>
-                    <div className="submits">
-                        <input type="submit" value="Kirish" className="fjf" />
-                    </div>
-
-                </div>
-            </form>
+                    <form onSubmit={submitHandler}>
+                        <div className="form-inner">
+                            <div className="nature">
+                            <Image src={Logo} alt="" className='nature_img' />
+                            </div>
+                            <div className="login_otish">
+                                <h2>Ro'yhatdan o'tish</h2>
+                            </div>
+                            <FormControl component="fieldset" className="formControl">
+                                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" value={value} onChange={handleRadioChange}>
+                                    <FormControlLabel value="user" control={<Radio />} label="Users" onChange={(e) => setDetails({ user: e.target.value })} />
+                                    <FormControlLabel value="admin" control={<Radio />} label="Admin" onChange={(e) => setDetails({ user: e.target.value })}/>
+                                </RadioGroup>
+                                <FormHelperText className="helper">{helperText}</FormHelperText>
+                            </FormControl>
+                            <div className="text-danger">
+                                {(errorr != "") ? (<div className="error">{errorr}</div>) : ""}
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="name">Ism: </label> 
+                                <input type="text" name="name" id="name" className="fjf" onChange={e => setDetails({ ...details, name: e.target.value })} value={details.name} onClick={console.log(details.name)} />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Elektron pochta: </label>
+                                <input type="email" name="email" id="email" className="fjf" onChange={e => setDetails({ ...details, email: e.target.value })} value={details.email} onClick={console.log(details.email)} />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Parol: </label>
+                                <input type="password" name="password" id="password" className="fjf" onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
+                            </div>
+                            <div className="submits">
+                                <input type="submit" value="Kirish" className="fjf" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </FormWrapper>

@@ -5,9 +5,8 @@ import { AiOutlineUnorderedList, AiOutlineHome, AiOutlineUser } from "react-icon
 import { HiOutlineDocumentText } from "react-icons/hi";
 import Fade from 'react-reveal/Fade';
 
-
-
 const Dashboard = () => {
+    // const dispatch = useDispatch();
 
     const [tugma, setTugma] = useState(true);
 
@@ -15,6 +14,13 @@ const Dashboard = () => {
         setTugma(!tugma);
         console.log(tugma);
     }
+
+    // const clicking=(1)=>{
+    //     const a= {type: "YOPILISH", payload: 1}
+    //     return dispatch(a);
+    // }
+
+
     return (
         <Components>
             <div className="container locked">
@@ -41,6 +47,7 @@ const Dashboard = () => {
                                 </Link>
                             </Fade>
                         </li>
+
                         <li>
                             <Fade left>
                                 <Link href="/table">
@@ -49,7 +56,6 @@ const Dashboard = () => {
                                             Users</span></a>
                                 </Link>
                             </Fade>
-
                         </li>
                         <li>
                             <Fade left>
@@ -58,8 +64,8 @@ const Dashboard = () => {
                                         Document</span></a>
                                 </Link>
                             </Fade>
-
                         </li>
+
                         <li>
                             <Fade left>
                                 <Link href="bayonnoma">
@@ -67,8 +73,8 @@ const Dashboard = () => {
                                         Bayonnoma</span></a>
                                 </Link>
                             </Fade>
-
                         </li>
+
                         <li>
                             <Fade left>
                                 <Link href="qaror">
@@ -76,7 +82,6 @@ const Dashboard = () => {
                                         Qaror</span></a>
                                 </Link>
                             </Fade>
-
                         </li>
                     </ul>
                 </div>

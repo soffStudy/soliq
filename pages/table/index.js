@@ -7,6 +7,9 @@ import { CSVLink, CSVDownload } from 'react-csv'
 import All from '../../components/all'
 
 
+// Bu page da table dagi istalgan malumotlarni ustiga bosilganda shu klientni page iga otadi
+
+
 const Table = () => {
 
     const owners = useSelector(state => state.owners);

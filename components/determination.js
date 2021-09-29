@@ -6,6 +6,7 @@ import All from './all';
 
 const Determination = () => {
     const { menu } = useParams();
+    // bu joy agar link shu narsaga teng bo'lsa osha page chiqarib beradi
 
     return (
         <div>
