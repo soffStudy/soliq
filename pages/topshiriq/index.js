@@ -3,7 +3,7 @@ import All from '../../components/all'
 import Link from 'next/link'
 import Documents from '../../styleW/documents'
 import { FaPlus } from 'react-icons/fa';
-import Tables from '../../styleW/table'
+// import Tables from '../../styleW/table'
 import { CgPlayListCheck } from "react-icons/cg";
 import { AiOutlineCalendar, AiOutlineInfoCircle } from "react-icons/ai";
 import Head from 'next/head'
@@ -20,7 +20,7 @@ const Topshiriq = () => {
                 <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
             </Head>
             <Documents>
-                <div className="container">
+                <div className="container bgImage">
                     <div className="NewWork pt-2">
                         <Link href='topshiriqUchunInput'>
                             <button className='btn btn-primary'><FaPlus /></button>
@@ -28,7 +28,6 @@ const Topshiriq = () => {
                     </div>
                     <div>
                         <div className="row ff">
-
                             <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
                                 <div>
                                     <Link href='table' >

@@ -3,8 +3,7 @@ import styled from "styled-components";
 const Documents = styled.div`
     font-family: 'Times New Roman', Times, serif;
     padding: 0 20px 0 20px;
-    background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
-    object-fit: cover;
+    /* background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg); */
     border-radius: 5px;
     .bayonnoma{
         padding: 10px;
@@ -108,6 +107,12 @@ const Documents = styled.div`
                display: block;
            }
        }
+   }
+   .bgImage{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 20px 0 20px;
+    background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
+    border-radius: 5px;
    }
 `;
 
