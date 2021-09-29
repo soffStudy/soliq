@@ -12,6 +12,23 @@ font-family: 'Times New Roman', Times, serif;
         border:1px solid gray;
     }
 }
+.topshiriqCard{
+    min-width:150px;
+    min-height: 100px;
+    background-color: black;
+ 
+}
+
+.ff{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+}
 .red{
     color: #FF0505;
     font-weight: bold;

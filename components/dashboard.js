@@ -83,6 +83,16 @@ const Dashboard = () => {
                                 </Link>
                             </Fade>
                         </li>
+
+                        <li>
+                            <Fade left>
+                                <Link href="topshiriq">
+                                    <a className='d-flex'><span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><HiOutlineDocumentText /> </span>  <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
+                                        Topshiriq</span></a>
+                                </Link>
+                            </Fade>
+                        </li>
+
                     </ul>
                 </div>
             </div>
