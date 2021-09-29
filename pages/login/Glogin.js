@@ -15,7 +15,7 @@ function Glogin() {
   }
 
   const [user, setUser] = useState({ name: "", email: "" });
-  const [error, setError] = useState("");
+  const [errorr, setErrorr] = useState("");
 
   const Login = details => {
 
@@ -32,17 +32,17 @@ function Glogin() {
       })
       router.push("menu")
     } else {
-      // console.log("details topilmadi");
+      console.log("Ma'lumot topilmadi");
 
       // console.log(details);
 
-      setError("Error")
+      setErrorr("Error")
     }
   }
 
-  const Logout = () => {
-    setUser({ name: "", email: "" })
-  }
+  // const Logout = () => {
+  //   setUser({ name: "", email: "" })
+  // }
 
   return (
     <GloginW >
@@ -52,7 +52,7 @@ function Glogin() {
             <CircularProgress />
           </Box>
         ) : (
-          <Form Login={Login} error={error} />
+          <Form Login={Login} errorr={errorr} />
         )}
       </div>
     </GloginW>
