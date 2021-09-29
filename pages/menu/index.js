@@ -3,6 +3,8 @@ import Tables from '../../styleW/table'
 import { CgPlayListCheck } from "react-icons/cg";
 import { AiOutlineCalendar, AiOutlineInfoCircle } from "react-icons/ai";
 import All from '../../components/all'
+import Head from 'next/head'
+
 
 
 
@@ -11,6 +13,12 @@ const Menu = () => {
 
     return (
         <All>
+            <Head>
+                <title>Soliq.uz</title>
+                <meta name="description" content="Uzbekistan silq haqida umumiy malumot" />
+                <meta name="key words" content="Ozbekiston soliq idorasi, soliq turlari, soliq haqidagi hujjatlar" />
+                <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
+            </Head>
             <Tables>
                 <div className='container menu'>
                     {/* <div className='soliqLogo'>
