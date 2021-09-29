@@ -3,6 +3,9 @@ import styled from "styled-components";
 const Documents = styled.div`
     font-family: 'Times New Roman', Times, serif;
     padding: 0 20px 0 20px;
+    background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
+    object-fit: cover;
+    border-radius: 5px;
     .bayonnoma{
         padding: 10px;
         margin: 10px;
@@ -16,8 +19,7 @@ const Documents = styled.div`
     .topshiriqCard{
         min-width:150px;
         min-height: 100px;
-        background: rgb(0,209,255);
-        background: linear-gradient(321deg, rgba(0,209,255,1) 0%, rgba(0,0,255,1) 46%, rgba(0,82,255,1) 71%);
+        background-color: #002a6998;
         color: black;
         width: 400px;
         height: 200px;
@@ -26,6 +28,7 @@ const Documents = styled.div`
         padding: 20px;
         border-radius: 15px;
         color: white;
+        
     }
 
     .ff{
@@ -62,32 +65,50 @@ const Documents = styled.div`
         justify-content: end;
         align-items: center;
         margin-top: 10px;
+        
     }
   
 
-    /* .custom-shape-divider-bottom-1632912464 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    background-color: red;
+    .acha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+   
+    .Inform{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 15px;
+       margin-bottom: 10px;
+       border-radius: 10px;
+       box-shadow: 4px 5px 5px #575757;
+       background-color: #002A69;
+       width: 400px;
+       height: 200px;
+       &:hover{
+           transition: 0.3s;
+        box-shadow: 7px 8px 4px #575757;
 
-    .custom-shape-divider-bottom-1632912464 svg {
-        position: relative;
-        display: block;
-        width: calc(108% + 1.3px);
-        height: 238px;
-        transform: rotateY(180deg);
-    }
-
-    .custom-shape-divider-bottom-1632912464 .shape-fill {
-        fill: #FFFFFF;
-} */
-
+       }
+   
+       .rasmShaxs{
+           width: 70px;
+           height: 70px;
+           object-fit: cover;
+           margin: 5px;
+           border-radius: 50%;
+       
+       }
+       .personInf{
+           color: white;
+           a{
+               color: white;
+               text-decoration: none;
+               display: block;
+           }
+       }
+   }
 `;
 
 export default Documents
