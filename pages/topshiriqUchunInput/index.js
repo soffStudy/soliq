@@ -9,16 +9,19 @@ const Inputs = () => {
     return (
         <All>
             <WorkWrapper>
+
+
                 <div className="container bg1">
                     <div className="workTime">
                         <Link href='topshiriq'>
                             <a>
-                            <button className='btn btn-primary'><AiOutlineDoubleLeft/></button>
+                                <button className='btn btn-primary'><AiOutlineDoubleLeft /></button>
                             </a>
                         </Link>
                     </div>
+                    <h1 className='text-center p-2'>Yangi topshiriq</h1>
+
                     <div className="row bg2">
-                        <h1 className='text-center p-2'>Yangi topshiriq</h1>
                         <div className="col-md-6 col-sm-12">
                             <div className='p-2'>
                                 <label htmlFor="name" className='form-label'>Ism </label>
@@ -53,7 +56,9 @@ const Inputs = () => {
                                     {/* <CustomizedSwitches></CustomizedSwitches> */}
                                 </div>
 
-                                <button className='btn btn-primary mt-3'>Save</button>
+                                <div className='d-flex justify-content-end'>
+                                    <button className='btn btn-primary mt-4'>Saqlash</button>
+                                </div>
 
 
                             </div>
