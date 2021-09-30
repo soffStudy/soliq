@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-const Tables = styled.div`
+const Menu = styled.div`
+
+        background-image:url("soliq22.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
     table{
         padding: 10px;
         border: 1px solid black;
@@ -30,9 +35,6 @@ const Tables = styled.div`
     .menu{
         min-height: 100vh;
         width: 100% !important;
-        /* background-image:url("soliq22.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; */
         margin-top: 10px;
         border-radius: 5px;
         padding-top: 250px;
@@ -106,11 +108,7 @@ const Tables = styled.div`
        border-radius: 10px;
        box-shadow: 4px 5px 7px black;
        transition: 1s;
-<<<<<<< HEAD
-       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
-=======
        width: 70%;
->>>>>>> cf520a80907c5ea99a0e38661b28be5e6f6a1c51
 
        &:hover{
            box-shadow: 6px 7px 20px black;
@@ -118,7 +116,7 @@ const Tables = styled.div`
            transform: translateY(-10px);
            background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
        }
-      
+       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
        .rasmShaxs{
            width: 70px;
            height: 70px;
@@ -161,4 +159,4 @@ const Tables = styled.div`
    }
 `;
 
-export default Tables;
+export default Menu;

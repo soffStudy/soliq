@@ -1,49 +1,14 @@
 import styled from "styled-components";
 
-const Tables = styled.div`
-    table{
-        padding: 10px;
-        border: 1px solid black;
-        width: 100%;
-        tr{
-            .thColspan{
-                width: 100%;
-                min-height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        th{
-            border: 1px solid black;
-        }
-        td{
-            border: 1px solid black;
-            text-align: center;
-        }
-        a{
-            color: black;
-            text-decoration: none;
-        }
-    }
-
-    .menu{
-        min-height: 100vh;
-        width: 100% !important;
-        /* background-image:url("soliq22.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; */
-        margin-top: 10px;
-        border-radius: 5px;
-        padding-top: 250px;
-        width: 100% !important;
-    }
-    .twCards{
-        width: 100% !important;
+const twocardsW = styled.div`
         background-image: url("https://pix10.agoda.net/geo/city/14617/1_14617_02.jpg?s=1920x822");
         background-repeat: no-repeat;
         background-position: right, bottom;
         background-size: cover;
+        border-radius: 5px;
+
+    .twCards{
+        width: 100% !important;
         min-height:100vh !important;
         border-radius: 5px;
         margin-top: 0;
@@ -106,11 +71,7 @@ const Tables = styled.div`
        border-radius: 10px;
        box-shadow: 4px 5px 7px black;
        transition: 1s;
-<<<<<<< HEAD
-       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
-=======
        width: 70%;
->>>>>>> cf520a80907c5ea99a0e38661b28be5e6f6a1c51
 
        &:hover{
            box-shadow: 6px 7px 20px black;
@@ -118,7 +79,7 @@ const Tables = styled.div`
            transform: translateY(-10px);
            background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
        }
-      
+       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
        .rasmShaxs{
            width: 70px;
            height: 70px;
@@ -161,4 +122,4 @@ const Tables = styled.div`
    }
 `;
 
-export default Tables;
+export default twocardsW;

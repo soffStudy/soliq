@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import Menu from './menu/menu'
 import Glogin from './login/Glogin'
 
 export default function Home() {

@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import Documents from '../../styleW/documents'
 import jsPDF from 'jspdf'
 import All from '../../components/all'
+import Head from 'next/head'
+
 
 
 const owners = [
@@ -46,6 +48,12 @@ const Bayonnoma = () => {
 
     return (
         <All>
+            <Head>
+                <title>Soliq.uz</title>
+                <meta name="description" content="Uzbekistan silq haqida umumiy malumot" />
+                <meta name="key words" content="Ozbekiston soliq idorasi, soliq turlari, soliq haqidagi hujjatlar" />
+                <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
+            </Head>
             <Documents>
                 <div className="container">
                     <div className='d-flex justify-content-end mt-2'>

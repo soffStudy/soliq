@@ -7,7 +7,7 @@ import { CSVLink, CSVDownload } from 'react-csv'
 import All from '../../components/all'
 import Link from 'next/link'
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
-
+import Head from 'next/head'
 
 
 // Bu page da table dagi istalgan malumotlarni ustiga bosilganda shu klientni page iga otadi
@@ -39,6 +39,12 @@ const Table = () => {
 
     return (
         <All>
+            <Head>
+                <title>Soliq.uz</title>
+                <meta name="description" content="Uzbekistan silq haqida umumiy malumot" />
+                <meta name="key words" content="Ozbekiston soliq idorasi, soliq turlari, soliq haqidagi hujjatlar" />
+                <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
+            </Head>
             <Tables>
                 <div className='p-4'>
                     <div>
