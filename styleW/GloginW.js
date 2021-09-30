@@ -6,11 +6,7 @@ export const GloginW = styled.div`
     align-items: center !important;
     justify-content: center !important;
     width: 100%;
-<<<<<<< HEAD
   }
-=======
-    }
->>>>>>> 498cb853472321c0fed3c94c9993c36e48cd44cb
 
 .welcome button {
   display: block;

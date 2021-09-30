@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-const Tables = styled.div`
+const Menu = styled.div`
+
+        background-image:url("soliq22.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
     table{
         padding: 10px;
         border: 1px solid black;
@@ -30,9 +35,6 @@ const Tables = styled.div`
     .menu{
         min-height: 100vh;
         width: 100% !important;
-        /* background-image:url("soliq22.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; */
         margin-top: 10px;
         border-radius: 5px;
         padding-top: 250px;
@@ -157,4 +159,4 @@ const Tables = styled.div`
    }
 `;
 
-export default Tables;
+export default Menu;

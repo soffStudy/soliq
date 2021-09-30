@@ -1,9 +1,8 @@
 import React from 'react'
 import All from '../../components/all'
 import Link from 'next/link'
-import Documents from '../../styleW/documents'
+import QoshimchaTopshiriq from '../../styleW/qoshimchaTopshiriq'
 import { FaPlus } from 'react-icons/fa';
-// import Tables from '../../styleW/table'
 import { CgPlayListCheck } from "react-icons/cg";
 import { AiOutlineCalendar, AiOutlineInfoCircle } from "react-icons/ai";
 import Head from 'next/head'
@@ -19,7 +18,7 @@ const Topshiriq = () => {
                 <meta name="key words" content="Ozbekiston soliq idorasi, soliq turlari, soliq haqidagi hujjatlar" />
                 <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
             </Head>
-            <Documents>
+            <QoshimchaTopshiriq>
                 <div className="container bgImage">
                     <div className="NewWork pt-2">
                         <Link href='topshiriqUchunInput'>
@@ -73,7 +72,7 @@ const Topshiriq = () => {
                     </div>
                 </div>
 
-            </Documents>
+            </QoshimchaTopshiriq>
         </All>
     )
 }
