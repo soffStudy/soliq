@@ -3,7 +3,6 @@ import styled from "styled-components";
 const QoshimchaTopshiriq = styled.div`
     font-family: 'Times New Roman', Times, serif;
     padding: 0 20px 0 20px;
-    /* background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg); */
     border-radius: 5px;
     .bayonnoma{
         padding: 10px;
@@ -78,19 +77,20 @@ const QoshimchaTopshiriq = styled.div`
        display: flex;
        justify-content: space-between;
        align-items: center;
-       padding: 15px;
+       padding: 10px;
        margin-bottom: 10px;
        border-radius: 10px;
-       box-shadow: 4px 5px 5px #575757;
-       background-color: #002A69;
-       width: 400px;
-       height: 200px;
-       &:hover{
-           transition: 0.3s;
-        box-shadow: 7px 8px 4px #575757;
+       box-shadow: 4px 5px 7px black;
+       transition: 1s;
+       width: 100%;
 
+       &:hover{
+           box-shadow: 6px 7px 20px black;
+           /* transform: rotateX(10deg); */
+           transform: translateY(-10px);
+           background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
        }
-   
+       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
        .rasmShaxs{
            width: 70px;
            height: 70px;
@@ -108,6 +108,7 @@ const QoshimchaTopshiriq = styled.div`
            }
        }
    }
+
    font-family: 'Times New Roman', Times, serif;
     padding: 0 20px 0 20px;
     background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);

@@ -7,6 +7,8 @@ import 'aos/dist/aos.css'
 import All from '../../components/all'
 import { HiOutlineDocumentText } from "react-icons/hi";
 import Head from 'next/head'
+import { AiOutlineDoubleLeft } from 'react-icons/ai';
+
 
 
 
@@ -34,6 +36,13 @@ const TwoCards = () => {
                 <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
             </Head>
             <TwocardsW>
+                <div>
+                    <Link href='table'>
+                        <a>
+                            <button className='btn btn-primary'><AiOutlineDoubleLeft /></button>
+                        </a>
+                    </Link>
+                </div>
                 <div className="container twCards">
                     <div className='documentwords'>
                         <h1 className='text-center'>Istalgan hujjat turini tanlang va yuklab oling</h1>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Components from '../styleW/componentsW'
 import Link from 'next/link'
-import { AiOutlineUnorderedList, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineUnorderedList, AiOutlineHome, AiOutlineUser, AiFillEdit } from "react-icons/ai";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import Fade from 'react-reveal/Fade';
 
@@ -9,22 +9,30 @@ const Dashboard = () => {
     // const dispatch = useDispatch();
 
     const [tugma, setTugma] = useState(true);
+    const [kun, setKun] = useState(true);
 
     const fd = () => {
         setTugma(!tugma);
         console.log(tugma);
     }
 
-    // const clicking=(1)=>{
-    //     const a= {type: "YOPILISH", payload: 1}
-    //     return dispatch(a);
-    // }
+    useEffect(() => {
+        setKun(localStorage && localStorage.getItem("Kun"));
+
+    }, []);
+
+    const Kun = () => {
+        setKun(!kun);
+        console.log(kun);
+    }
+
 
 
     return (
         <Components>
             <div className="container locked">
-                <div className='dashboard'>
+
+                <div className={`dashboardumumiy  ${kun == true && "dashboard" || "dashboard2"}`}>
                     <div className='d-flex justify-content-center'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" className={`${tugma ? "gerb" : "gerb2"}`} alt="" />
 
@@ -33,6 +41,7 @@ const Dashboard = () => {
                         <button className='btn btnDashboard fw-bold' onClick={() => fd()}>
                             <AiOutlineUnorderedList /></button>
                     </div>
+                    <button className='btn btn-success' onClick={() => Kun()}>kun</button>
                     <ul>
                         <li>
                             <Fade left >
@@ -44,6 +53,17 @@ const Dashboard = () => {
                                             Menu
                                         </span>
                                     </a>
+                                </Link>
+                            </Fade>
+                        </li>
+
+                        <li>
+                            <Fade left>
+                                <Link href="topshiriq">
+                                    <a className='d-flex'>
+                                        <span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><AiFillEdit /> </span>
+                                        <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
+                                            Topshiriq</span></a>
                                 </Link>
                             </Fade>
                         </li>
@@ -84,14 +104,7 @@ const Dashboard = () => {
                             </Fade>
                         </li>
 
-                        <li>
-                            <Fade left>
-                                <Link href="topshiriq">
-                                    <a className='d-flex'><span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><HiOutlineDocumentText /> </span>  <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
-                                        Topshiriq</span></a>
-                                </Link>
-                            </Fade>
-                        </li>
+
 
                     </ul>
                 </div>

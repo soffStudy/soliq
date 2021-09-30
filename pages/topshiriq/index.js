@@ -19,7 +19,7 @@ const Topshiriq = () => {
                 <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
             </Head>
             <QoshimchaTopshiriq>
-                <div className="container bgImage">
+                <div className="container">
                     <div className="NewWork pt-2">
                         <Link href='topshiriqUchunInput'>
                             <button className='btn btn-primary'><FaPlus /></button>
