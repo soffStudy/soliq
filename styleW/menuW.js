@@ -109,14 +109,18 @@ const Menu = styled.div`
        box-shadow: 4px 5px 7px black;
        transition: 1s;
        width: 70%;
+       background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+       /* background: url(/../public/bgRasmImage.jpg); */
 
        &:hover{
            box-shadow: 6px 7px 20px black;
            /* transform: rotateX(10deg); */
            transform: translateY(-10px);
-           background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
+           background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+           background-position: center;
+           /* background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%); */
        }
-       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
+       /* background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee); */
        .rasmShaxs{
            width: 70px;
            height: 70px;

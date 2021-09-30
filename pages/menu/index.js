@@ -4,6 +4,7 @@ import { CgPlayListCheck } from "react-icons/cg";
 import { AiOutlineCalendar, AiOutlineInfoCircle } from "react-icons/ai";
 import All from '../../components/all'
 import Head from 'next/head'
+// import Gavsga from './../../public/bgRasmImage.jpg'
 
 
 

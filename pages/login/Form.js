@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image'
 import { FormWrapper } from './../../styleW/formWrap';
 import { AiOutlineRadiusUpright } from 'react-icons/ai';
+import Soliq from './../../public/soliq2.png'
 
 const Form = ({ Login, error }) => {
     const [details, setDetails] = useState({ name: "", email: "", password: "", role: "" });
@@ -25,7 +26,8 @@ const Form = ({ Login, error }) => {
                         <div className="form-inner">
 
                             <div className="nature">
-                                <img src="soliq.jpg" alt="" className='nature_img' />
+                                <Image src={ Soliq } alt="soliq gerb"/>
+                                
                             </div>
                             <div className="login_otish">
                                 <h2>Ro'yhatdan o'tish</h2>

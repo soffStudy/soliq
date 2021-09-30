@@ -3,6 +3,7 @@ import styled from "styled-components";
 const QoshimchaTopshiriq = styled.div`
     font-family: 'Times New Roman', Times, serif;
     padding: 0 20px 0 20px;
+    background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
     border-radius: 5px;
     .bayonnoma{
         padding: 10px;
@@ -80,17 +81,22 @@ const QoshimchaTopshiriq = styled.div`
        padding: 10px;
        margin-bottom: 10px;
        border-radius: 10px;
-       box-shadow: 4px 5px 7px black;
+       box-shadow: 4px 5px 5px #575757;
+       background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+       /* background-color: #002A69;
+       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee); */
+       width: 400px;
+       height: 200px;
        transition: 1s;
-       width: 100%;
 
        &:hover{
+           transition: 1s;
            box-shadow: 6px 7px 20px black;
-           /* transform: rotateX(10deg); */
            transform: translateY(-10px);
-           background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
+           background: url("https://image.freepik.com/free-vector/circuits-blue-red-gradient-digital-background_23-2148821701.jpg");
+           background-position: left center;
        }
-       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
+       
        .rasmShaxs{
            width: 70px;
            height: 70px;
@@ -109,10 +115,7 @@ const QoshimchaTopshiriq = styled.div`
        }
    }
 
-   font-family: 'Times New Roman', Times, serif;
-    padding: 0 20px 0 20px;
-    background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
-    border-radius: 5px;
+   
 `;
 
 export default QoshimchaTopshiriq

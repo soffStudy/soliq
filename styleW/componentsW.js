@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Components = styled.div`
+ 
 .dashboardumumiy{
     min-height: 97vh;
     transition: 0.3s;
@@ -51,9 +52,7 @@ const Components = styled.div`
 .dashboard{
     background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
 }
-.dashboard2{
-background-color:black;
-}
+
 
 
 .kl{
@@ -77,10 +76,28 @@ background-color:black;
 }
 
 .footer{
-    background-color: #002A69;
+    background: linear-gradient(-45deg, #040139, #0e0b4b, #3183CB, #040139);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     padding: 15px 0;
     margin-top: 10px;
 }
+/* animatsiya */
+
+@keyframes gradient{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+/* animatsiya */
+
 .children{
     max-width: 800px !important;
 }
@@ -107,6 +124,11 @@ background-color:black;
         margin-bottom: 30px;
     }
 
+    .kunTun{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 `;
 

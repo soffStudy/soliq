@@ -38,6 +38,11 @@ const Tables = styled.div`
         padding-top: 250px;
         width: 100% !important;
     }
+    .kalendar{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
     .twCards{
         width: 100% !important;
         background-image: url("https://pix10.agoda.net/geo/city/14617/1_14617_02.jpg?s=1920x822");
@@ -106,7 +111,7 @@ const Tables = styled.div`
        border-radius: 10px;
        box-shadow: 4px 5px 7px black;
        transition: 1s;
-       width: 70%;
+       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
 
        &:hover{
            box-shadow: 6px 7px 20px black;
@@ -114,7 +119,7 @@ const Tables = styled.div`
            transform: translateY(-10px);
            background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
        }
-       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
+      
        .rasmShaxs{
            width: 70px;
            height: 70px;

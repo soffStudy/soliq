@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
 import Tables from '../../styleW/table'
 import { useRouter } from 'next/router'
 import { BiDownload } from "react-icons/bi"
-import { CSVLink, CSVDownload } from 'react-csv'
+import { CSVLink } from 'react-csv'
 import All from '../../components/all'
 import Link from 'next/link'
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
 import Head from 'next/head'
+import NativePickers from '../../components/data'
+import NativePickers2 from '../../components/data2'
+
 
 
 // Bu page da table dagi istalgan malumotlarni ustiga bosilganda shu klientni page iga otadi
@@ -54,8 +57,50 @@ const Table = () => {
                             </a>
                         </Link>
                     </div>
-                    <h3 className='text-center m-3 mb-5'>Mijozlar haqidagi to'liq ma'lumot</h3>
+                    <h3 className='text-center m-3'>Mijozlar haqidagi to'liq ma'lumot</h3>
                     <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
+
+                    <div className="row">
+                        <div className="col-lg-6 col-sm-12">
+
+                            <div className='d-flex justify-content-center'>
+                                <div className='w-50'>
+                                    <label htmlFor="tuman1">Viloyat</label>
+                                    <select class="form-select" id="tuman1" aria-label="Default select example">
+                                        <option selected>20 MPI</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className='kalendar'>
+                                <NativePickers />
+                            </div>
+
+
+                        </div>
+
+                        <div className="col-lg-6 col-sm-12">
+
+                            <div className='d-flex justify-content-center'>
+                                <div className='w-50'>
+                                    <label htmlFor="tuman2">Tuman</label>
+                                    <select class="form-select" id="tuman2" aria-label="Default select example">
+                                        <option selected>10 MPI</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div className='kalendar'>
+                                <NativePickers2 />
+                            </div>
+
+                        </div>
+                    </div>
                     <div className='d-flex justify-content-end'>
 
                         <CSVLink className='btn btn-primary fs-4' data={owners}><BiDownload /></CSVLink>
