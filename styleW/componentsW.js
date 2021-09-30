@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const Components = styled.div`
-
-.dashboard{
-    background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
+ 
+.dashboardumumiy{
     min-height: 97vh;
     transition: 0.3s;
     border-radius: 5px;
@@ -12,24 +11,26 @@ const Components = styled.div`
     margin-bottom:10px;
     max-width: 100%;
     ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0 !important;
-    margin-top: 30px;
-    li{
-        padding: 5px;
-        margin-bottom: 10px;
-        a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-            &:hover{
-                border-bottom: 10px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 !important;
+        margin-top: 30px;
+        li{
+            padding: 5px;
+            margin-bottom: 10px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+                &:hover{
+                    border-bottom: 10px;
+                }
             }
         }
     }
-    }
+
+
     .gerb{
         width: 100px;
         height: 100px;
@@ -47,6 +48,13 @@ const Components = styled.div`
 
     }
 }
+
+.dashboard{
+    background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
+}
+
+
+
 .kl{
     padding: 5px 0;
     border-radius: 10px;
@@ -68,10 +76,28 @@ const Components = styled.div`
 }
 
 .footer{
-    background-color: #002A69;
+    background: linear-gradient(-45deg, #040139, #0e0b4b, #3183CB, #040139);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     padding: 15px 0;
     margin-top: 10px;
 }
+/* animatsiya */
+
+@keyframes gradient{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+/* animatsiya */
+
 .children{
     max-width: 800px !important;
 }
@@ -98,6 +124,11 @@ const Components = styled.div`
         margin-bottom: 30px;
     }
 
+    .kunTun{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 `;
 

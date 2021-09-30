@@ -6,6 +6,8 @@ const twocardsW = styled.div`
         background-position: right, bottom;
         background-size: cover;
         border-radius: 5px;
+        margin-top: 10px;
+        padding: 10px;
 
     .twCards{
         width: 100% !important;

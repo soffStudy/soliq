@@ -106,11 +106,7 @@ const Tables = styled.div`
        border-radius: 10px;
        box-shadow: 4px 5px 7px black;
        transition: 1s;
-<<<<<<< HEAD
        background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee);
-=======
-       width: 70%;
->>>>>>> cf520a80907c5ea99a0e38661b28be5e6f6a1c51
 
        &:hover{
            box-shadow: 6px 7px 20px black;

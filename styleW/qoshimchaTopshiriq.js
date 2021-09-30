@@ -3,7 +3,7 @@ import styled from "styled-components";
 const QoshimchaTopshiriq = styled.div`
     font-family: 'Times New Roman', Times, serif;
     padding: 0 20px 0 20px;
-    /* background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg); */
+    background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
     border-radius: 5px;
     .bayonnoma{
         padding: 10px;
@@ -78,19 +78,25 @@ const QoshimchaTopshiriq = styled.div`
        display: flex;
        justify-content: space-between;
        align-items: center;
-       padding: 15px;
+       padding: 10px;
        margin-bottom: 10px;
        border-radius: 10px;
        box-shadow: 4px 5px 5px #575757;
-       background-color: #002A69;
+       background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+       /* background-color: #002A69;
+       background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee); */
        width: 400px;
        height: 200px;
-       &:hover{
-           transition: 0.3s;
-            box-shadow: 7px 8px 4px #575757;
+       transition: 1s;
 
+       &:hover{
+           transition: 1s;
+           box-shadow: 6px 7px 20px black;
+           transform: translateY(-10px);
+           background: url("https://image.freepik.com/free-vector/circuits-blue-red-gradient-digital-background_23-2148821701.jpg");
+           background-position: left center;
        }
-   
+       
        .rasmShaxs{
            width: 70px;
            height: 70px;
@@ -108,10 +114,8 @@ const QoshimchaTopshiriq = styled.div`
            }
        }
    }
-   font-family: 'Times New Roman', Times, serif;
-    padding: 0 20px 0 20px;
-    background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
-    border-radius: 5px;
+
+   
 `;
 
 export default QoshimchaTopshiriq

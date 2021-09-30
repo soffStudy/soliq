@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Components from '../styleW/componentsW'
 import Link from 'next/link'
-import { AiOutlineUnorderedList, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineUnorderedList, AiOutlineHome, AiOutlineUser, AiFillEdit } from "react-icons/ai";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import Fade from 'react-reveal/Fade';
 
@@ -9,22 +9,19 @@ const Dashboard = () => {
     // const dispatch = useDispatch();
 
     const [tugma, setTugma] = useState(true);
-
     const fd = () => {
         setTugma(!tugma);
         console.log(tugma);
     }
 
-    // const clicking=(1)=>{
-    //     const a= {type: "YOPILISH", payload: 1}
-    //     return dispatch(a);
-    // }
+
 
 
     return (
         <Components>
             <div className="container locked">
-                <div className='dashboard'>
+
+                <div className="dashboard dashboardumumiy">
                     <div className='d-flex justify-content-center'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" className={`${tugma ? "gerb" : "gerb2"}`} alt="" />
 
@@ -44,6 +41,17 @@ const Dashboard = () => {
                                             Menu
                                         </span>
                                     </a>
+                                </Link>
+                            </Fade>
+                        </li>
+
+                        <li>
+                            <Fade left>
+                                <Link href="topshiriq">
+                                    <a className='d-flex'>
+                                        <span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><AiFillEdit /> </span>
+                                        <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
+                                            Topshiriq</span></a>
                                 </Link>
                             </Fade>
                         </li>
@@ -84,14 +92,7 @@ const Dashboard = () => {
                             </Fade>
                         </li>
 
-                        <li>
-                            <Fade left>
-                                <Link href="topshiriq">
-                                    <a className='d-flex'><span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><HiOutlineDocumentText /> </span>  <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
-                                        Topshiriq</span></a>
-                                </Link>
-                            </Fade>
-                        </li>
+
 
                     </ul>
                 </div>
