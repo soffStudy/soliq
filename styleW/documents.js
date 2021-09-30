@@ -85,10 +85,12 @@ const Documents = styled.div`
        background-color: #002A69;
        width: 400px;
        height: 200px;
+       transition: 1s;
        &:hover{
-           transition: 0.3s;
-        box-shadow: 7px 8px 4px #575757;
-
+           transition: 1s;
+           box-shadow: 6px 7px 20px black;
+           transform: translateY(-10px);
+           background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
        }
    
        .rasmShaxs{
