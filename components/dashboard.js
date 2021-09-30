@@ -16,11 +16,6 @@ const Dashboard = () => {
         console.log(tugma);
     }
 
-    useEffect(() => {
-        setKun(localStorage && localStorage.getItem("Kun"));
-
-    }, []);
-
     const Kun = () => {
         setKun(!kun);
         console.log(kun);
