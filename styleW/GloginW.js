@@ -13,8 +13,8 @@ export const GloginW = styled.div`
     justify-content: center;
     align-items: center;
     .loading2{
-      width: 110px !important;
-      height: 110px !important;
+      width: 90px !important;
+      height: 90px !important;
     }
   }
 
