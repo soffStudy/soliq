@@ -38,6 +38,11 @@ const Tables = styled.div`
         padding-top: 250px;
         width: 100% !important;
     }
+    .kalendar{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
     .twCards{
         width: 100% !important;
         background-image: url("https://pix10.agoda.net/geo/city/14617/1_14617_02.jpg?s=1920x822");

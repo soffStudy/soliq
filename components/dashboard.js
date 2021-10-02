@@ -14,6 +14,10 @@ const Dashboard = () => {
         console.log(tugma);
     }
 
+    const Kun = () => {
+        setKun(!kun);
+        console.log(kun);
+    }
 
 
 
@@ -23,7 +27,7 @@ const Dashboard = () => {
 
                 <div className="dashboard dashboardumumiy">
                     <div className='d-flex justify-content-center'>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/200px-Emblem_of_Uzbekistan.svg.png" className={`${tugma ? "gerb" : "gerb2"}`} alt="" />
+                        <img src="https://static.zarnews.uz/crop/f/0/736_736_80_f0be73820d98ccb8d5c4eb277b86ae40.jpg?img=self&v=1603877901" className={`${tugma ? "gerb" : "gerb2"}`} alt="" />
 
                     </div>
                     <div className='d-flex justify-content-center mt-2 mb-2'>
