@@ -82,7 +82,7 @@ const QoshimchaTopshiriq = styled.div`
        margin-bottom: 10px;
        border-radius: 10px;
        box-shadow: 4px 5px 5px #575757;
-       background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+       background: url(bgRasm22.jpg);
        /* background-color: #002A69;
        background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee); */
        width: 400px;
