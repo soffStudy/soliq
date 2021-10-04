@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const Components = styled.div`
+
+    .active{
+        background-color: red;
+        color: red;
+    }
  
 .dashboardumumiy{
     min-height: 97vh;
@@ -10,6 +15,7 @@ const Components = styled.div`
     margin-top: 10px;
     margin-bottom:10px;
     max-width: 100%;
+   
     ul{
         list-style-type: none;
         margin: 0;
@@ -18,15 +24,44 @@ const Components = styled.div`
         li{
             padding: 5px;
             margin-bottom: 10px;
+            
             a{
                 color: white;
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 20px;
-                &:hover{
+                position: relative;
+                transition: 0.5s;
+                
+                /* &:hover{
                     border-bottom: 10px;
+                } */
+                    &::before {  
+                    transform: scaleY(0);
+                    }
+
+                    &:hover::before {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                    }
+
+                    &::before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: 0; right: 0; bottom: 0; left: 0;
+                    inset: 0 0 0 0;
+                    background: hsl(200 100% 80%);
+                    z-index: -1;
+                    transition: transform .3s ease;
+                    border-radius: 5px;
+                    }
+                    &:hover{
+                        color: blue !important;
+                    }
                 }
-            }
+            
+
         }
     }
 
@@ -129,7 +164,6 @@ const Components = styled.div`
         justify-content: center;
         align-items: center;
     }
-
 `;
 
 export default Components

@@ -59,9 +59,11 @@ function Glogin() {
       </Head>
       <div className="App">
         {(user.email != "") ? (
-          <Box sx={{ display: 'flex' }}>
-            <CircularProgress />
-          </Box>
+        <div className="loading">
+            <Box sx={{ display: 'flex' }}>
+              <CircularProgress className="loading2" />
+            </Box>
+        </div>
         ) : (
           <Form Login={Login} error={error} />
         )}

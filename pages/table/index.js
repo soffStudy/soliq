@@ -114,6 +114,7 @@ const Table = () => {
                                             <th colSpan='4'>Kechiktirib taqdim etilgan xisobot turi</th>
                                             <th rowSpan='2'><div className='thColspan'>Kechikkan kuni </div></th>
                                             <th rowSpan='2'><div className='thColspan'>Jarima summasi</div></th>
+                                            <th><div className='thColspan'>buttons</div></th>
                                         </tr>
                                         <tr>
                                             <th>Davri</th>
@@ -128,7 +129,7 @@ const Table = () => {
 
                                         {owners.map((v, i) => {
                                             return (
-                                                <tr key={i} className={v.owner ? "yashil" : "qizil"} onClick={() => handleRowClick(v.id)}>
+                                                <tr key={i} className={v.owner == "yashil" && "yashil" || v.owner == "qizil" && "qizil" || 'bg-warning'} onClick={() => handleRowClick(v.id)}>
                                                     <td>{v.companyName}</td>
                                                     <td>{v.soliqTuri}</td>
                                                     <td>{v.oy}</td>
@@ -139,6 +140,7 @@ const Table = () => {
                                                     <td>{v.tumanKodi}</td>
                                                     <td>{v.kechikanKun}</td>
                                                     <td>{v.jarimaSumma}</td>
+                                                    <td className={v.owner == "qizil" && "d-block" || 'd-none'} ><button className='btn btn-danger m-1'>ozgartirish</button>  <button className='btn btn-primary m-1'>otish</button></td>
 
                                                 </tr>
                                             )

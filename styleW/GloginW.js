@@ -7,6 +7,16 @@ export const GloginW = styled.div`
     justify-content: center !important;
     width: 100%;
   }
+  .loading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loading2{
+      width: 90px !important;
+      height: 90px !important;
+    }
+  }
 
 .welcome button {
   display: block;

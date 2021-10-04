@@ -51,7 +51,7 @@ const TwoCards = () => {
 
                     <div className="row">
                         <div className="col-lg-6 col-sm-12 d-flex justify-content-center ">
-                            <div className='twleft rasmlar1' data-aos="fade-right">
+                            <div className='twleft rasmlar1 ' data-aos="fade-right">
                                 <div className='sozlarB'>
                                     <p className='fs-3'>Bayonnoma</p>
                                     <p className='fs-6'> <HiOutlineDocumentText /> Davlat xizmatlaridan foydalanish</p>

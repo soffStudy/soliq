@@ -101,22 +101,25 @@ const Menu = styled.div`
    }
    .Inform{
        display: flex;
-       justify-content: space-between;
+       /* justify-content: space-between; */
+       justify-content: center;
        align-items: center;
+       flex-direction: column;
        padding: 10px;
        margin-bottom: 10px;
        border-radius: 10px;
        box-shadow: 4px 5px 7px black;
        transition: 1s;
        width: 70%;
-       background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+       height: 180px;
+       background: url(bgRasm22.jpg);
        /* background: url(/../public/bgRasmImage.jpg); */
 
        &:hover{
            box-shadow: 6px 7px 20px black;
            /* transform: rotateX(10deg); */
            transform: translateY(-10px);
-           background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+           background: url(bgRasm22.jpg);
            background-position: center;
            /* background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%); */
        }

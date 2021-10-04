@@ -15,6 +15,7 @@ const QoshimchaTopshiriq = styled.div`
             border:1px solid gray;
         }
     }
+
     .topshiriqCard{
         min-width:150px;
         min-height: 100px;
@@ -41,10 +42,12 @@ const QoshimchaTopshiriq = styled.div`
             color: white;
         }
     }
+
     .red{
         color: #FF0505;
         font-weight: bold;
     }
+
     .bayonnoma2{
         width: 70%;
     }
@@ -53,21 +56,21 @@ const QoshimchaTopshiriq = styled.div`
         color: #09CF00;
         font-weight: bold;
     }
+
     .qaror{
+        border-bottom:1px solid black;
         .qaror2{
             width: 400px;
         }
-        border-bottom:1px solid black;
+       
     }
     .NewWork{
         display: flex;
         justify-content: end;
         align-items: center;
         margin-top: 10px;
-        
     }
-  
-
+    
     .acha{
         display: flex;
         justify-content: center;
@@ -76,13 +79,15 @@ const QoshimchaTopshiriq = styled.div`
    
     .Inform{
        display: flex;
-       justify-content: space-between;
+       /* justify-content: space-between; */
+       justify-content: center;
        align-items: center;
+       flex-direction: column;
        padding: 10px;
        margin-bottom: 10px;
        border-radius: 10px;
        box-shadow: 4px 5px 5px #575757;
-       background: url(https://image.freepik.com/free-vector/radiating-light-movement-background_52683-14635.jpg);
+       background: url(bgRasm22.jpg);
        /* background-color: #002A69;
        background-image: linear-gradient(to right top, #2b64b9, #2f80ca, #459bd7, #64b5e3, #88cfee); */
        width: 400px;
@@ -103,8 +108,8 @@ const QoshimchaTopshiriq = styled.div`
            object-fit: cover;
            margin: 5px;
            border-radius: 50%;
-       
        }
+
        .personInf{
            color: white;
            a{

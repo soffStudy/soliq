@@ -58,7 +58,7 @@ const Bayonnoma = () => {
                 <div className="container">
                     <div className='d-flex justify-content-end mt-2'>
 
-                        <button className='btn btn-primary' onClick={() => printPageFun('print')}>Download</button>
+                        <button className='btn btn-primary' onClick={() => printPageFun('print')}>Pechat</button>
 
                     </div>
                     <div className='bayonnoma mt-5' id='print'>
