@@ -61,7 +61,7 @@ const Table = () => {
                     <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
 
                     <div className="row">
-                        <div className="nimadir1 d-flex">
+                        <div className="nimadir1 d-flex g">
 
                             <div className='d-flex justify-content-center bilmiman2'>
                                 <div className='w-100 m-2'>
