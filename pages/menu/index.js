@@ -31,7 +31,7 @@ const Menu = () => {
                                             <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" alt="rasm" className='rasmShaxs' />
                                         </div>
                                         <div className='personInf'>
-                                            <p className='fs-5 fw-bold'>Soliq xisobotlarini muddatida taqdim etmaganlar</p>
+                                            <p className='fs-6 text-center fw-bold'>Soliq xisobotlarini muddatida taqdim etmaganlar</p>
 
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@ const Menu = () => {
                                         <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="rasm" className='rasmShaxs' />
                                     </div>
                                     <div className='personInf'>
-                                        <p className='fs-5 fw-bold'>Yangi topshiriq 2</p>
+                                        <p className='fs-6 fw-bold'>Yangi topshiriq 2</p>
                                     </div>
                                 </div>
                             </div>
