@@ -14,11 +14,16 @@ const Dashboard = () => {
         console.log(tugma);
     }
 
+    const [active, setActive] = useState(true);
+    const Ac = () => {
+        setActive(!active);
+        console.log(active);
+    }
+
     const Kun = () => {
         setKun(!kun);
         console.log(kun);
     }
-
 
 
     return (
@@ -37,8 +42,8 @@ const Dashboard = () => {
                     <ul>
                         <li>
                             <Fade left >
-                                <Link href="/menu">
-                                    <a className='d-flex'>
+                                <Link href="/menu" onClick={() => Ac()}>
+                                    <a className={`${active ? "d-flex" : "active"}`} >
                                         <span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><AiOutlineHome />
                                         </span>
                                         <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
@@ -52,10 +57,10 @@ const Dashboard = () => {
                         <li>
                             <Fade left>
                                 <Link href="topshiriq">
-                                    <a className='d-flex'>
+                                    <a className='d-flex '>
                                         <span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><AiFillEdit /> </span>
                                         <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
-                                            Topshiriq</span></a>
+                                            Hujjatlar</span></a>
                                 </Link>
                             </Fade>
                         </li>
@@ -65,7 +70,7 @@ const Dashboard = () => {
                                 <Link href="/table">
                                     <a className='d-flex'><span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><AiOutlineUser /> </span>
                                         <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
-                                            Users</span></a>
+                                            Foydalanuvchilar</span></a>
                                 </Link>
                             </Fade>
                         </li>
@@ -82,7 +87,7 @@ const Dashboard = () => {
                             <Fade left>
                                 <Link href="bayonnoma">
                                     <a className='d-flex'><span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><HiOutlineDocumentText /> </span>  <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
-                                        Bayonnoma</span></a>
+                                        Hisobot</span></a>
                                 </Link>
                             </Fade>
                         </li>

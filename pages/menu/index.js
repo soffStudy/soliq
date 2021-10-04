@@ -27,14 +27,14 @@ const Menu = () => {
                         <div className="col-lg-6 col-sm-12">
                             <div className='m-1 d-flex justify-content-center'>
                                 <div className='Inform'>
-                                    <div>
+                                    <div className="mb-2">
                                         <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" alt="rasm" className='rasmShaxs' />
                                     </div>
                                     <div className='personInf'>
                                         <p className='fs-5 fw-bold'>Yangi topshiriq 1</p>
-                                        <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
+                                        {/* <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
                                         <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
-                                        <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>
+                                        <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a> */}
                                     </div>
                                 </div>
                             </div>
@@ -43,14 +43,14 @@ const Menu = () => {
                         <div className="col-lg-6 col-sm-12">
                             <div className='m-1 d-flex justify-content-center'>
                                 <div className='Inform'>
-                                    <div>
+                                    <div className="mb-2">
                                         <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="rasm" className='rasmShaxs' />
                                     </div>
                                     <div className='personInf'>
                                         <p className='fs-5 fw-bold'>Yangi topshiriq 2</p>
-                                        <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
+                                        {/* <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
                                         <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
-                                        <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>
+                                        <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a> */}
                                     </div>
                                 </div>
                             </div>
@@ -66,3 +66,30 @@ const Menu = () => {
 }
 
 export default Menu
+
+
+// h1::before {  
+//     transform: scaleX(0);
+//     transform-origin: bottom right;
+//   }
+  
+//   h1:hover::before {
+//     transform: scaleX(1);
+//     transform-origin: bottom left;
+//   }
+  
+//   h1::before {
+//     content: " ";
+//     display: block;
+//     position: absolute;
+//     top: 0; right: 0; bottom: 0; left: 0;
+//     inset: 0 0 0 0;
+//     background: hsl(200 100% 80%);
+//     z-index: -1;
+//     transition: transform .3s ease;
+//   }
+  
+//   h1 {
+//     position: relative;
+//     font-size: 5rem;
+//   }

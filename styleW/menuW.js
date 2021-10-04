@@ -101,14 +101,17 @@ const Menu = styled.div`
    }
    .Inform{
        display: flex;
-       justify-content: space-between;
+       /* justify-content: space-between; */
+       justify-content: center;
        align-items: center;
+       flex-direction: column;
        padding: 10px;
        margin-bottom: 10px;
        border-radius: 10px;
        box-shadow: 4px 5px 7px black;
        transition: 1s;
        width: 70%;
+       height: 180px;
        background: url(bgRasm22.jpg);
        /* background: url(/../public/bgRasmImage.jpg); */
 

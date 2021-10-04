@@ -6,10 +6,11 @@ import { FaPlus } from 'react-icons/fa';
 import { CgPlayListCheck } from "react-icons/cg";
 import { AiOutlineCalendar, AiOutlineInfoCircle } from "react-icons/ai";
 import Head from 'next/head'
-
+import jsPDF from 'jspdf'
 
 
 const Topshiriq = () => {
+
     return (
         <All>
             <Head>
@@ -22,8 +23,9 @@ const Topshiriq = () => {
                 <div className="container">
                     <div className="NewWork pt-2">
                         <Link href='topshiriqUchunInput'>
-                            <button className='btn btn-primary'><FaPlus /></button>
+                            <button className='btn btn-primary'><strong>Add</strong> <FaPlus className="mb-1"/></button>
                         </Link>
+                       
                     </div>
                     <div>
                         <div className="row ff">
@@ -32,14 +34,14 @@ const Topshiriq = () => {
                                     <Link href='table' >
                                         <div className='m-1'>
                                             <div className='Inform'>
-                                                <div>
+                                                <div className="mb-2">
                                                     <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="rasm" className='rasmShaxs' />
                                                 </div>
                                                 <div className='personInf'>
                                                     <p className='fs-5 fw-bold'>Jismoniy shaxslar uchun</p>
-                                                    <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
+                                                    {/* <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
                                                     <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
-                                                    <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>
+                                                    <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -53,14 +55,14 @@ const Topshiriq = () => {
                                     <Link href='' >
                                         <div className='m-1'>
                                             <div className='Inform'>
-                                                <div>
+                                                <div className="mb-2">
                                                     <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="rasm" className='rasmShaxs' />
                                                 </div>
                                                 <div className='personInf'>
                                                     <p className='fs-5 fw-bold'>Jismoniy shaxslar uchun</p>
-                                                    <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
+                                                    {/* <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
                                                     <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
-                                                    <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>
+                                                    <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a> */}
                                                 </div>
                                             </div>
                                         </div>
