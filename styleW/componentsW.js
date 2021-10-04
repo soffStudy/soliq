@@ -37,7 +37,7 @@ const Components = styled.div`
                     border-bottom: 10px;
                 } */
                     &::before {  
-                    transform: scaleY(0);
+                    transform: scaleX(0);
                     }
 
                     &:hover::before {

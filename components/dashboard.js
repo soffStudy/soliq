@@ -9,15 +9,10 @@ const Dashboard = () => {
     // const dispatch = useDispatch();
 
     const [tugma, setTugma] = useState(true);
+
     const fd = () => {
         setTugma(!tugma);
         console.log(tugma);
-    }
-
-    const [active, setActive] = useState(true);
-    const Ac = () => {
-        setActive(!active);
-        console.log(active);
     }
 
     const Kun = () => {
@@ -42,8 +37,8 @@ const Dashboard = () => {
                     <ul>
                         <li>
                             <Fade left >
-                                <Link href="/menu" onClick={() => Ac()}>
-                                    <a className={`${active ? "d-flex" : "active"}`} >
+                                <Link href="/menu" >
+                                    <a className="d-flex" >
                                         <span className={`${tugma ? "p-1 d-flex align-items-center" : "d-flex justify-contenr-center p-1 ms-1"}`}><AiOutlineHome />
                                         </span>
                                         <span className={`${tugma ? "menuWord2" : "menuWord"}`}>
