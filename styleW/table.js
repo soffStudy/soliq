@@ -43,6 +43,15 @@ const Tables = styled.div`
         display: flex;
         justify-content: center;
     }
+    .nimadir1{
+        width: 50%;
+    }
+    .bilmiman{
+        width: 50%;
+    }
+    .bilmiman2{
+        width: 100%;
+    }
     .twCards{
         width: 100% !important;
         background-image: url("https://pix10.agoda.net/geo/city/14617/1_14617_02.jpg?s=1920x822");

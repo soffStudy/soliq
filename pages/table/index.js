@@ -59,43 +59,41 @@ const Table = () => {
                     <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
 
                     <div className="row">
-                        <div className="col-lg-6 col-sm-12">
-                            <div className='d-flex justify-content-center'>
-                                <div className='w-50'>
-                                    <label htmlFor="tuman1">Viloyat</label>
-                                    <select class="form-select" id="tuman1" aria-label="Default select example">
-                                        <option selected>20 MPI</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
+                        <div className='d-flex justify-content-center'>
+                            <div className='w-50'>
+                                <label htmlFor="tuman1">Viloyat</label>
+                                <select class="form-select" id="tuman1" aria-label="Default select example">
+                                    <option selected>20 MPI</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
-                            <div className='kalendar'>
+                        </div>
+
+
+                        <div className='d-flex justify-content-center'>
+                            <div className='w-50'>
+                                <label htmlFor="tuman2">Tuman</label>
+                                <select class="form-select" id="tuman2" aria-label="Default select example">
+                                    <option selected>10 MPI</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="nimadir1 d-flex">
+                            <div className='kalendar bilmiman'>
                                 <NativePickers />
                             </div>
-                        </div>
-
-                        <div className="col-lg-6 col-sm-12">
-                            <div className='d-flex justify-content-center'>
-                                <div className='w-50'>
-                                    <label htmlFor="tuman2">Tuman</label>
-                                    <select class="form-select" id="tuman2" aria-label="Default select example">
-                                        <option selected>10 MPI</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div className='kalendar'>
+                            <div className='kalendar bilmiman'>
                                 <NativePickers2 />
                             </div>
-
                         </div>
                     </div>
-                    <div className='d-flex justify-content-end'>
+                    <div className='d-flex justify-content-end mt-3'>
 
                         <CSVLink className='btn btn-primary fs-4' data={owners}><BiDownload /></CSVLink>
                     </div>
