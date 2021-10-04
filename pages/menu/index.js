@@ -9,7 +9,6 @@ import Head from 'next/head'
 
 
 
-
 const Menu = () => {
 
     return (
@@ -31,7 +30,7 @@ const Menu = () => {
                                         <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" alt="rasm" className='rasmShaxs' />
                                     </div>
                                     <div className='personInf'>
-                                        <p className='fs-5 fw-bold'>Yangi topshiriq 1</p>
+                                        <p className='fs-5 fw-bold'>Soliq xisobotlarini muddatida taqdim etmaganlar</p>
                                         <a href=""> <span className='fs-3 me-1'><CgPlayListCheck /></span> Kreditlar ro'yhati</a>
                                         <a href=""> <span className='fs-4 me-1'><AiOutlineCalendar /></span> To'lash vaqtlari</a>
                                         <a href=""><span className='fs-4 me-1'><AiOutlineInfoCircle /></span> Mijoz ma'lumotlari</a>

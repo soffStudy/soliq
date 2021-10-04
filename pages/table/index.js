@@ -11,8 +11,6 @@ import Head from 'next/head'
 import NativePickers from '../../components/data'
 import NativePickers2 from '../../components/data2'
 
-
-
 // Bu page da table dagi istalgan malumotlarni ustiga bosilganda shu klientni page iga otadi
 
 
@@ -62,7 +60,6 @@ const Table = () => {
 
                     <div className="row">
                         <div className="col-lg-6 col-sm-12">
-
                             <div className='d-flex justify-content-center'>
                                 <div className='w-50'>
                                     <label htmlFor="tuman1">Viloyat</label>
@@ -77,12 +74,9 @@ const Table = () => {
                             <div className='kalendar'>
                                 <NativePickers />
                             </div>
-
-
                         </div>
 
                         <div className="col-lg-6 col-sm-12">
-
                             <div className='d-flex justify-content-center'>
                                 <div className='w-50'>
                                     <label htmlFor="tuman2">Tuman</label>
@@ -105,8 +99,8 @@ const Table = () => {
 
                         <CSVLink className='btn btn-primary fs-4' data={owners}><BiDownload /></CSVLink>
                     </div>
-
                 </div>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
