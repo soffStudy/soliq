@@ -64,7 +64,7 @@ const Table = () => {
                             <div className='d-flex justify-content-center bilmiman2'>
                                 <div className='w-100 m-2'>
                                     <label htmlFor="tuman1">Viloyat</label>
-                                    <select class="form-select" id="tuman1" aria-label="Default select example">
+                                    <select className="form-select" id="tuman1" aria-label="Default select example">
                                         <option selected>20 MPI</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -78,7 +78,7 @@ const Table = () => {
                         <div className='d-flex justify-content-center bilmiman2'>
                             <div className='w-50 m-2'>
                                 <label htmlFor="tuman2">Tuman</label>
-                                <select class="form-select" id="tuman2" aria-label="Default select example">
+                                <select className="form-select" id="tuman2" aria-label="Default select example">
                                     <option selected>10 MPI</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
