@@ -58,22 +58,25 @@ const Table = () => {
                     <h3 className='text-center m-3'>Mijozlar haqidagi to'liq ma'lumot</h3>
                     <p className='ms-5 me-5 ps-5 pe-5 mb-4'>Dolor sit amet consectetur adipisicing elit. Eaque iste atque eum porro impedit error repellendus consequuntur temporibus rem ducimus vitae non id ipsa at, iusto facere, possimus, unde fuga.</p>
 
-                    <div className="row">
-                        <div className='d-flex justify-content-center'>
-                            <div className='w-50'>
-                                <label htmlFor="tuman1">Viloyat</label>
-                                <select class="form-select" id="tuman1" aria-label="Default select example">
-                                    <option selected>20 MPI</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
+                    <div className="d-flex  ">
+                        <div className="nimadir1 d-flex g">
+
+                            <div className='d-flex justify-content-center bilmiman2'>
+                                <div className='w-100 m-2'>
+                                    <label htmlFor="tuman1">Viloyat</label>
+                                    <select class="form-select" id="tuman1" aria-label="Default select example">
+                                        <option selected>20 MPI</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
 
-                        <div className='d-flex justify-content-center'>
-                            <div className='w-50'>
+                        <div className='d-flex justify-content-center bilmiman2'>
+                            <div className='w-50 m-2'>
                                 <label htmlFor="tuman2">Tuman</label>
                                 <select class="form-select" id="tuman2" aria-label="Default select example">
                                     <option selected>10 MPI</option>

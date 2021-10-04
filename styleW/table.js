@@ -48,6 +48,7 @@ const Tables = styled.div`
     }
     .bilmiman{
         width: 50%;
+        margin: 20px 10px;
     }
     .bilmiman2{
         width: 100%;
