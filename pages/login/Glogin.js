@@ -53,17 +53,17 @@ function Glogin() {
     <GloginW >
       <Head>
         <title>Soliq.uz</title>
-        <meta name="description" content="Uzbekistan silq haqida umumiy malumot" />
+        <meta name="description" content="Uzbekistan soliq haqida umumiy malumot" />
         <meta name="key words" content="Ozbekiston soliq idorasi, soliq turlari, soliq haqidagi hujjatlar" />
         <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
       </Head>
       <div className="App">
         {(user.email != "") ? (
-        <div className="loading">
+          <div className="loading">
             <Box sx={{ display: 'flex' }}>
               <CircularProgress className="loading2" />
             </Box>
-        </div>
+          </div>
         ) : (
           <Form Login={Login} error={error} />
         )}

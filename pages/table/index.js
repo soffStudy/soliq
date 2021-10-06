@@ -42,7 +42,7 @@ const Table = () => {
         <All>
             <Head>
                 <title>Soliq.uz</title>
-                <meta name="description" content="Uzbekistan silq haqida umumiy malumot" />
+                <meta name="description" content="Uzbekistan soliq haqida umumiy malumot" />
                 <meta name="key words" content="Ozbekiston soliq idorasi, soliq turlari, soliq haqidagi hujjatlar" />
                 <link rel="icon" href="https://www.advantour.com/img/uzbekistan/symbolics/gerb_big.jpg" />
             </Head>
@@ -102,65 +102,59 @@ const Table = () => {
                     </div>
                 </div>
 
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div>
-                                <table className='table table-hover' id="tableEx">
-                                    <thead>
-                                        <tr>
-                                            <th rowSpan="2"><div className='thColspan'>Korxona nomi</div></th>
-                                            <th rowSpan="2"><div className='thColspan'>Soliq turi</div></th>
-                                            <th colSpan='2'>Hisobot topshirish </th>
-                                            <th colSpan='4'>Kechiktirib taqdim etilgan xisobot turi</th>
-                                            <th rowSpan='2'><div className='thColspan'>Kechikkan kuni </div></th>
-                                            <th rowSpan='2'><div className='thColspan'>Jarima summasi</div></th>
-                                            <th><div className='thColspan'>buttons</div></th>
-                                        </tr>
-                                        <tr>
-                                            <th>Davri</th>
-                                            <th>Muddati</th>
-                                            <th>Sanasi</th>
-                                            <th>Summasi</th>
-                                            <th>Viloyat kodi</th>
-                                            <th>Tuman kodi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                <div className=" w-100">
+                    <table className='table table-hover' id="tableEx">
+                        <thead>
+                            <tr>
+                                <th rowSpan="2"><div className='thColspan'>Korxona nomi</div></th>
+                                <th rowSpan="2"><div className='thColspan'>Soliq turi</div></th>
+                                <th colSpan='2'>Hisobot topshirish </th>
+                                <th colSpan='4'>Kechiktirib taqdim etilgan xisobot turi</th>
+                                <th rowSpan='2'><div className='thColspan'>Kechikkan kuni </div></th>
+                                <th rowSpan='2'><div className='thColspan'>Jarima summasi</div></th>
+                                <th><div className='thColspan'>buttons</div></th>
+                            </tr>
+                            <tr>
+                                <th>Davri</th>
+                                <th>Muddati</th>
+                                <th>Sanasi</th>
+                                <th>Summasi</th>
+                                <th>Viloyat kodi</th>
+                                <th>Tuman kodi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                                        {owners.map((v, i) => {
-                                            return (
-                                                <tr key={i} className={v.owner == "yashil" && "yashil" || v.owner == "qizil" && "qizil" || 'bg-warning'} onClick={() => handleRowClick(v.id)}>
-                                                    <td>{v.companyName}</td>
-                                                    <td>{v.soliqTuri}</td>
-                                                    <td>{v.oy}</td>
-                                                    <td>{v.muddati}</td>
-                                                    <td>{v.sanasi}</td>
-                                                    <td>{v.sum}</td>
-                                                    <td>{v.viloyatKodi}</td>
-                                                    <td>{v.tumanKodi}</td>
-                                                    <td>{v.kechikanKun}</td>
-                                                    <td>{v.jarimaSumma}</td>
-                                                    <td className={v.owner == "qizil" && "d-block" || 'd-none'} ><button className='btn btn-danger m-1'>ozgartirish</button>  <button className='btn btn-primary m-1'>otish</button></td>
+                            {owners.map((v, i) => {
+                                return (
+                                    <tr key={i} className={v.owner == "yashil" && "yashil" || v.owner == "qizil" && "qizil" || 'bg-warning'} onClick={() => handleRowClick(v.id)}>
+                                        <td>{v.companyName}</td>
+                                        <td>{v.soliqTuri}</td>
+                                        <td>{v.oy}</td>
+                                        <td>{v.muddati}</td>
+                                        <td>{v.sanasi}</td>
+                                        <td>{v.sum}</td>
+                                        <td>{v.viloyatKodi}</td>
+                                        <td>{v.tumanKodi}</td>
+                                        <td>{v.kechikanKun}</td>
+                                        <td>{v.jarimaSumma}</td>
+                                        <td className={v.owner == "qizil" && "d-block" || 'd-none'} ><button className='btn btn-danger m-1'>ozgartirish</button>  <button className='btn btn-primary m-1'>otish</button></td>
 
-                                                </tr>
-                                            )
+                                    </tr>
+                                )
 
-                                        })}
+                            })}
 
-                                        <tr>
-                                            <td colSpan='5'>Jami</td>
-                                            <td>{umumiySumm}</td>
-                                            <td>x</td>
-                                            <td>x</td>
-                                            <td>5</td>
-                                            <td>25,0</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                            <tr>
+                                <td colSpan='5'>Jami</td>
+                                <td>{umumiySumm}</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>5</td>
+                                <td>25,0</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </Tables>
         </All>

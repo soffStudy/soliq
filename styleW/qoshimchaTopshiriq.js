@@ -5,6 +5,8 @@ const QoshimchaTopshiriq = styled.div`
     padding: 0 20px 0 20px;
     background: url(https://storage.kun.uz/source/6/CbSUmOR2CKJ3p7JgTTxCesLYT0UJiofF.jpg);
     border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
     .bayonnoma{
         padding: 10px;
         margin: 10px;

@@ -3,8 +3,9 @@ import styled from "styled-components";
 const Tables = styled.div`
     table{
         padding: 10px;
+        margin: 10px;
         border: 1px solid black;
-        width: 100%;
+        width: 98%;
         tr{
             .thColspan{
                 width: 100%;

@@ -138,6 +138,7 @@ const Components = styled.div`
 }
 .dashbordChildren{
     min-height: 90vh;
+    overflow-x: hidden;
 }
 .ikonkalar{
     transition: 0.3s;
