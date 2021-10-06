@@ -6,7 +6,7 @@ import Components from '../styleW/componentsW'
 const All = ({ children }) => {
     return (
         <Components>
-            <div className='d-flex dashbordChildren'>
+            <div className='d-flex '>
 
                 <Dashboard />
 

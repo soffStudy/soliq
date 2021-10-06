@@ -27,6 +27,11 @@ const Tables = styled.div`
             text-decoration: none;
         }
     }
+    .ttt{
+        position: sticky;
+        top: 10px;
+        left: 10px;
+    }
 
     .menu{
         min-height: 100vh;

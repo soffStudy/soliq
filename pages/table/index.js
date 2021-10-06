@@ -49,6 +49,11 @@ const Table = () => {
             <Tables>
                 <div className='p-4'>
                     <div>
+                        <h1 className='ttt'>
+                            salom
+                        </h1>
+                    </div>
+                    <div>
                         <Link href='topshiriq'>
                             <a>
                                 <button className='btn btn-primary'><AiOutlineDoubleLeft /></button>

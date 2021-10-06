@@ -15,7 +15,7 @@ const Components = styled.div`
     margin-top: 10px;
     margin-bottom:10px;
     max-width: 100%;
-   
+  
     ul{
         list-style-type: none;
         margin: 0;
@@ -97,10 +97,11 @@ const Components = styled.div`
 }
 
 .locked{
-    position: sticky;
-    top: 10px;
-    left: 10px;
+  position: sticky;
+  top: 10px;
+  left: 10px;
 }
+
 .menuWord{
     display: none;
     transition: 0.3s;
@@ -165,6 +166,9 @@ const Components = styled.div`
         justify-content: center;
         align-items: center;
     }
+.iii{
+    background-color: black;
+}
 `;
 
 export default Components
